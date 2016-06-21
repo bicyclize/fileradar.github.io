@@ -15,9 +15,10 @@
 	<!-- Import CSS -->
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/jms-style.css">
-	<link rel="icon" 
-      type="image/png" 
-      href="logo.png">
+	<link rel="icon" type="image/png" href="logo.png">
+	 <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+	 <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+
 	<!--[if lt IE 10]>
 		<link href= "css/ie.css" rel= "stylesheet" media= "all" />
 	<![endif]-->
@@ -670,8 +671,59 @@
 		</section>
 		<!-- End partners Page -->
 	
+	<!-- Start Demo Page -->
+		<section id="demo" class="page page-gray">
+			<div class="container">
+				<div class="row">
+					<div class="span12">
+						<div class="title">Demo</div>
+						<hr>
+					<div id="mapid1" class="mapclass leaflet-container leaflet-fade-anim" style="height: 180px; position: relative;" tabindex="0">
+						<div class="leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);">
+							<div class="leaflet-tile-pane">
+								<div class="leaflet-layer">
+									<div class="leaflet-tile-container leaflet-zoom-animated">
+									</div>
+									<div class="leaflet-tile-container leaflet-zoom-animated">
+										<img class="leaflet-tile leaflet-tile-loaded" src="https://api.tiles.mapbox.com/v4/mapbox.streets/14/8188/5448.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpandmbXliNDBjZWd2M2x6bDk3c2ZtOTkifQ._QA7i5Mpkd_m30IGElHziw" style="height: 256px; width: 256px; left: 114px; top: -39px;">
+										<img class="leaflet-tile leaflet-tile-loaded" src="https://api.tiles.mapbox.com/v4/mapbox.streets/14/8189/5448.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpandmbXliNDBjZWd2M2x6bDk3c2ZtOTkifQ._QA7i5Mpkd_m30IGElHziw" style="height: 256px; width: 256px; left: 370px; top: -39px;">
+										<img class="leaflet-tile leaflet-tile-loaded" src="https://api.tiles.mapbox.com/v4/mapbox.streets/14/8187/5448.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpandmbXliNDBjZWd2M2x6bDk3c2ZtOTkifQ._QA7i5Mpkd_m30IGElHziw" style="height: 256px; width: 256px; left: -142px; top: -39px;">
+										<img class="leaflet-tile leaflet-tile-loaded" src="https://api.tiles.mapbox.com/v4/mapbox.streets/14/8190/5448.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpandmbXliNDBjZWd2M2x6bDk3c2ZtOTkifQ._QA7i5Mpkd_m30IGElHziw" style="height: 256px; width: 256px; left: 626px; top: -39px;"></div>
+									</div>
+								</div>
+								<div class="leaflet-objects-pane">
+									<div class="leaflet-shadow-pane"></div>
+									<div class="leaflet-overlay-pane"></div>
+									<div class="leaflet-marker-pane"></div>
+									<div class="leaflet-popup-pane"></div>
+								</div>
+							</div>
+							<div class="leaflet-control-container">
+								<div class="leaflet-top leaflet-left">
+									<div class="leaflet-control-zoom leaflet-bar leaflet-control">
+										<a class="leaflet-control-zoom-in" href="#" title="Zoom in">+</a>
+										<a class="leaflet-control-zoom-out" href="#" title="Zoom out">-</a>
+									</div>
+								</div>
+								<div class="leaflet-top leaflet-right"></div>
+								<div class="leaflet-bottom leaflet-left"></div>
+								<div class="leaflet-bottom leaflet-right">
+									<div class="leaflet-control-attribution leaflet-control">
+										<a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> | Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	<!-- End Demo Page -->
+
+
 		<!-- Start Contact Page -->
-		<section id="contact" class="page page-gray">
+		<section id="contact" class="page">
 			<div class="container">
 				<div class="row">
 					<div class="span12">
