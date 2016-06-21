@@ -1,4 +1,4 @@
 <?php
 // To
-define("WEBMASTER_EMAIL", 'info@bicyclize.com');
+define("WEBMASTER_EMAIL", 'info@fileradar.nl');
 ?>
