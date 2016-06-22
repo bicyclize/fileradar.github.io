@@ -140,24 +140,30 @@
 						<p>Some examples of the variability of the model-view-controller, without aiming at completeness:</p>
 						<div class="tabs">
 							<ul>
-								<li id="tab1" class="current">Model / data sources</li>
-								<li id="tab2">Control</li>
-								<li id="tab3">View</li>
+								<li id="tab1" class="current">Data</li>
+								<li id="tab2">Model</li>
+								<li id="tab3">Control</li>
+								<li id="tab4">View</li>
 							</ul>
 							<div class="tab-content-wrp">
 		    					<div id="tab1-content" class="tab-content active">
-									
 										<div class="container">	
 											<div class="row">
 												
 												<div class="row">
 													<div class="span3">
 													
-														<img src="images/honey1.png" width="150" height="150" style="margin: 0px 80px">
+														<img src="images/honey3.png" width="150" height="150" style="margin: 0px 80px">
 														<hr class="visible-phone">
 													</div>
-													<div class="span9">
-														<h5>json, xml, binary or program formats such as:</h5>
+													<div class="span3">
+														<h5>Formats</h5>
+														<p>Json, XML, Protofub</p>
+														<p>openLR, datex2, NTCIP</p>
+														<p>CSV, excel, noSQL, SQL</p>
+													</div>
+													<div class="span3">
+														<h5>Sources</h5>
 														<p>Opensreetmap, Twitter, weather services, websites</p>
 														<p>Propriatery software programs: shapefiles, autocad, vissim, matlab, etc</p>
 														<p>Video feeds, country specific traffic sources for NL, UK</p>
@@ -173,14 +179,33 @@
 												<div class="row">
 													<div class="span3">
 													
+														<img src="images/honey1.png" width="150" height="150" style="margin: 0px 80px">
+														<hr class="visible-phone">
+													</div>
+													<div class="span9">
+														<h5>Standardization</h5>
+														<p>Elements define a location in time and space</p>
+														<p>Dataobjects linked to elements</p>
+														
+													</div>
+												</div>
+											</div>
+										</div>
+		    					</div>
+		    					<div id="tab3-content" class="tab-content">
+		    							<div class="container">	
+											<div class="row">
+												<div class="row">
+													<div class="span3">
+													
 														<img src="images/honey2.png" width="150" height="150" style="margin: 0px 80px">
 														<hr class="visible-phone">
 													</div>
 													<div class="span3">
-																<h5>Industry standard techniques: java, osgi, Jetty/Netty</h5>
-																
-																<p>Elements define position in time and space</p>
-																<p>Dataobjects attach dynamic data to elements</p>
+																<h5>Industry standard techniques</h5>
+																<p>Java8</p>
+																<p>OSGI</p>
+																<p>Jetty/Netty</p>
 																
 														
 													</div>
@@ -201,13 +226,14 @@
 											</div>
 										</div>
 		    					</div>
-		    					<div id="tab3-content" class="tab-content">
+		    					
+		    					<div id="tab4-content" class="tab-content">
 		    							<div class="container">	
 											<div class="row">
 												<div class="row">
 													<div class="span3">
 													
-														<img src="images/honey3.png" width="150" height="150" style="margin: 0px 80px">
+														<img src="images/honeyfull.png" width="150" height="150" style="margin: 0px 80px">
 														<hr class="visible-phone">
 													</div>
 													<div class="span9">
@@ -215,6 +241,7 @@
 														<p>Interactive map with options to dinamically adjust time</p>
 														<p>Situational Awareness: focus only on extra-ordinary eventualities</p>
 														<p>Traffic 360, zooming-in/out adjusts datasource volume and intensity to reflect scope</p>
+														<p>Leveraging NodeJs, LeafletJs, Meteor</p>
 														
 													</div>
 												</div>
@@ -422,8 +449,8 @@
 				<div class="row">
 					<div class="span4 right-pull">
 						<div id="twitter-parallax" class="vertical-text">
-							<a class="twitter-timeline" data-height="300" data-theme="light" data-link-color="#fac828" href="https://twitter.com/fileradarNL"></a>
-							<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+							<a class="twitter-timeline" data-height="300" data-theme="light" data-link-color="#fac828" href="https://twitter.com/dantesoftware"></a>
+							
 
 						</div>
 					</div>
@@ -651,7 +678,7 @@
 								
 								<a class="external" href="http://arane.nl/"><img src="img/partners/Arane.png" width="150" style="margin: 0px 20px 20px 80px"></a>
 								
-								<a class="external" href="http://www.kapsch.net/"><img src="img/partners/Kapsch.png" width="150" style="margin: -10px 20px 20px 80px"></a>
+								<a class="external" href="http://www.kapsch.net/"><img src="img/partners/Kapsch.png" width="150" style="margin: 0px 20px 20px 80px"></a>
 
 							</div>
 						</div>
@@ -661,6 +688,7 @@
 								
 								<a class="external" href="http://www.gov.uk/government/organisations/highways-england/"><img src="img/partners/HEngland.jpg" width="150" style="margin: 20px 20px 20px 70px"></a>
 								<a class="external" href="http://ej-technologies.com/"><img src="img/partners/ej-technologies.png" width="150" style="margin: 20px 20px 20px 80px"></a>
+								<a class="external" href="http://www.tudelft.nl/en/"><img src="img/partners/tudelft.png" width="150" style="margin: 20px 20px 20px 80px"></a>
 
 								
 							</div>
@@ -765,8 +793,7 @@
 	<script src="js/jflickrfeed.js"></script><!-- Flickr Feed -->
 	<script src="js/settings.js"></script> <!-- JS Options -->
 	<script src="js/contact.js"></script> <!-- Feedback form -->
-	<script src="js/twitter/jquery.tweet.js"></script> <!-- Twitter Feed -->
-	<script src="js/twitter-options.js"></script> <!-- Twitter Feed Options -->
+	<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 	<script>
 
 		
