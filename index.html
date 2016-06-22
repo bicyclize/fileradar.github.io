@@ -46,11 +46,11 @@
 					<ul id="fixed-nav" class="visible-desktop">
 						<li class="current scroll-link"><a href="#home">Home</a></li>
 						<li><a class="scroll-link" href="#about">Dante</a></li>
+						<li><a class="scroll-link" href="#demo">Demo</a></li>
 						<li><a class="scroll-link" href="#news">News</a></li>
 						<li><a class="scroll-link" href="#module">Modules</a></li>
 						<li><a class="scroll-link" href="#portfolio">Cases</a></li>
 						<li><a class="scroll-link" href="#partners">Partners</a></li>
-						<li><a class="scroll-link" href="#demo">Demo</a></li>
 						<li><a class="scroll-link" href="#contact">Contact</a></li>
 						
 					</ul>
@@ -85,11 +85,11 @@
 						<ul id="fluid-nav" class="fluid-navigation visible-desktop">
 							<li class="current scroll-link"><a href="#home">Home</a></li>
 						<li><a class="scroll-link" href="#about">Dante</a></li>
+						<li><a class="scroll-link" href="#demo">Demo</a></li>
 						<li><a class="scroll-link" href="#news">News</a></li>
 						<li><a class="scroll-link" href="#module">Modules</a></li>
 						<li><a class="scroll-link" href="#portfolio">Cases</a></li>
 						<li><a class="scroll-link" href="#partners">Partners</a></li>
-						<li><a class="scroll-link" href="#demo">Demo</a></li>
 						<li><a class="scroll-link" href="#contact">Contact</a></li>
 						</ul>
 					</div>
@@ -258,8 +258,32 @@
 			</div>
 		</section>
 		<!-- End About Page -->
+	
 
-		<section id="news" class="page page-gray">
+	<!-- Start Demo Page -->
+		<section id="demo" class="page page-gray">
+			<div class="container">
+				<div class="row">	
+					<div class="title">Demo</div>
+					<hr>
+					<div class="container">
+						<iframe class="container" src="http://acc.dantesoftware.com"  frameborder="0" noresize="noresize" data-view="fullScreenPreview" style="height: 500px">
+						</iframe>
+						<!-- div id="mapblack" style="width: 1120px; height: 400px"></div -->
+					</div>
+				</div>
+			</div -->
+			
+		</section>	
+			
+
+	<!-- End Demo Page -->
+	
+
+
+	<!-- Start NEWS Page -->
+
+		<section id="news" class="page">
 			<div class="container">
 				<div class="row">
 					<div class="span12">
@@ -320,6 +344,9 @@
 			</div>
 		</section>
 		
+	<!-- End NEWS Page -->
+
+
 		<!-- Start Parallax -->
 		<section id="parallax1">
 			<div class="bg1"></div>
@@ -699,28 +726,11 @@
 		</section>
 		<!-- End partners Page -->
 	
-	<!-- Start Demo Page -->
-		<section id="demo" class="page page-gray">
-			<div class="container">
-				<div class="row">	
-					<div class="span12">
-						<div class="title">Demo</div>
-						<hr>
-							<iframe class="full-screen-preview_frame" src="http://acc.dantesoftware.com" width="1000" frameborder="0" noresize="noresize" data-view="fullScreenPreview" style="height: 500px">
-							</iframe>
-						<!-- div id="mapblack" style="width: 1120px; height: 400px"></div -->
-					</div>
-				</div>
-			</div -->
-			
-		</section>	
-			
 
-	<!-- End Demo Page -->
 
 
 		<!-- Start Contact Page -->
-		<section id="contact" class="page">
+		<section id="contact" class="page page-gray">
 			<div class="container">
 				<div class="row">
 					<div class="span12">
@@ -729,15 +739,12 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="span12">
-					
-					</div>
-				</div>
-				<!-- Start Form -->
-				<form class="container">
-					<div class="row">
 					<div class="span8">
-						<div class="span3 left-pull">
+						<div class="row">
+						<div id="mapblack" style="height: 400px">
+						</div>
+						</div>
+						<!--div class="span3 left-pull">
 							<label>Your name</label>
 							<input class="span3" type="text" name="name" placeholder="Your Name">
 						</div>
@@ -751,18 +758,20 @@
 							<textarea class="span6" rows="4" name="message" placeholder="Message"></textarea>
 							<button type="submit" class="btn"><i class="web-icon">8</i>Send Message</button>
 						</div>
+					</div-->
 					</div>
+					<div class="span4">
+						<div class="row">
 						<div class="span4 address portfolio">
 									<div class="contact-name">Fileradar BV</div>
 									<h5>A-Lab</h5>
 									<p>Overhoeksplein 2</p>
 									<p>1031 KS, Amsterdam</p>
 									<p>info@dantesoftware.com</p>
-							
+						</div>
 						</div>
 					</div>
-				</form>
-				<!-- End Form -->
+				</div>
 			</div>
 		</section>
 		<!-- End Contact Page -->
@@ -806,14 +815,11 @@
 		var map = L.map('mapblack', {
 		  scrollWheelZoom: false,
 		  center: [52.38472, 4.90368],
-		  zoom: 12
+		  zoom: 13
 		});
-	//	L.marker([52.38398, 4.90304]).addTo(map)
-	//		.bindPopup("<b>Dantesoftware</b><br />A-Lab").openPopup();
+		L.marker([52.38398, 4.90304]).addTo(map).bindPopup("<b>Dantesoftware</b><br />A-Lab");
 		
 		map.addLayer(layer);
-
-
 	</script>
 	
 
