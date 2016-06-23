@@ -153,7 +153,7 @@
 												<div class="row">
 													<div class="span3">
 													
-														<img src="images/honey3.png" width="150" height="150" style="margin: 0px 80px">
+														<img src="images/honey1.png" width="150" height="150" style="margin: 0px 80px">
 														<hr class="visible-phone">
 													</div>
 													<div class="span3">
@@ -179,7 +179,7 @@
 												<div class="row">
 													<div class="span3">
 													
-														<img src="images/honey1.png" width="150" height="150" style="margin: 0px 80px">
+														<img src="images/honey2.png" width="150" height="150" style="margin: 0px 80px">
 														<hr class="visible-phone">
 													</div>
 													<div class="span9">
@@ -198,7 +198,7 @@
 												<div class="row">
 													<div class="span3">
 													
-														<img src="images/honey2.png" width="150" height="150" style="margin: 0px 80px">
+														<img src="images/honey3.png" width="150" height="150" style="margin: 0px 80px">
 														<hr class="visible-phone">
 													</div>
 													<div class="span3">
@@ -269,7 +269,6 @@
 					<div class="container">
 						<iframe class="container" src="http://acc.dantesoftware.com"  frameborder="0" noresize="noresize" data-view="fullScreenPreview" style="height: 500px">
 						</iframe>
-						<!-- div id="mapblack" style="width: 1120px; height: 400px"></div -->
 					</div>
 				</div>
 			</div -->
@@ -728,55 +727,72 @@
 	
 
 
-
 		<!-- Start Contact Page -->
-		<section id="contact" class="page page-gray">
+		<section id="contact" class="page">
 			<div class="container">
 				<div class="row">
 					<div class="span12">
 						<div class="title center-title">Contact us</div>
 						<hr>
+						<div class="lead"></div>
+						<div class="row">
+							<div class="span8">
+								<div id="mapblack" style="height: 400px"></div>
+							</div>
+							<div class="span4 address">
+								<div class="contact-name">Fileradar BV</div>
+											
+								<h5>Our location</h5>
+								<h5>A-Lab</h5>
+											<p>Overhoeksplein 2</p>
+											<p>1031 KS, Amsterdam</p>
+											
+								<hr class="gray">
+								<h5>E-mail</h5>
+								<p>info@dantesoftware.com</p>
+								<hr class="gray">
+								
+								<ul class="social-icons">
+									<li><a href="https://twitter.com/dantesoftware">&#229;</a></li>
+									<!--li><a href="#">ë</a></li> insta
+									<li><a href="#">ä</a></li> facebook
+									<li><a href="#">è</a></li  google-->
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="row">
-					<div class="span8">
-						<div class="row">
-						<div id="mapblack" style="height: 400px">
-						</div>
-						</div>
-						<!--div class="span3 left-pull">
-							<label>Your name</label>
-							<input class="span3" type="text" name="name" placeholder="Your Name">
-						</div>
-						<div class="span3">
-							<label>Your e-mail</label>
-							<input class="span3 right-pull" type="text" name="email" placeholder="Your E-mail">
-						</div>
-					
-						<div class="span6 textarea-margin">
-							<label>Message</label>
-							<textarea class="span6" rows="4" name="message" placeholder="Message"></textarea>
-							<button type="submit" class="btn"><i class="web-icon">8</i>Send Message</button>
-						</div>
-					</div-->
-					</div>
-					<div class="span4">
-						<div class="row">
-						<div class="span4 address portfolio">
-									<div class="contact-name">Fileradar BV</div>
-									<h5>A-Lab</h5>
-									<p>Overhoeksplein 2</p>
-									<p>1031 KS, Amsterdam</p>
-									<p>info@dantesoftware.com</p>
-						</div>
+					<div class="span12">
+						<hr class="feedbackline">
+						<div class="result">
 						</div>
 					</div>
 				</div>
+				<!-- Start Form -->
+				<form class="contact form">
+					<div class="row">
+						<div class="span6 pull-left">
+							<label>Your name</label>
+							<input class="span6" type="text" name="name" placeholder="Your Name">
+						</div>
+						<div class="span6 pull-right">
+							<label>Your e-mail</label>
+							<input class="span6" type="text" name="email" placeholder="Your E-mail">
+						</div>
+					</div>
+					<div class="row">
+						<div class="span12 textarea-margin">
+							<label>Message</label>
+							<textarea class="span12" rows="8" name="message" placeholder="Message"></textarea>
+							<button type="submit" class="btn"><i class="web-icon">8</i>Send Message</button>
+						</div>
+					</div>
+				</form>
+				<!-- End Form -->
 			</div>
 		</section>
-		<!-- End Contact Page -->
-		
-		
+		<!-- End Contact Page -->		
 		
 		<section id="copyright">
 		<a>© 2016 Fileradar BV</a>
@@ -804,10 +820,6 @@
 	<script src="js/contact.js"></script> <!-- Feedback form -->
 	<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 	<script>
-
-		
-
-
 		var layer = L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png',{
   attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="https://cartodb.com/attributions">CartoDB</a>'
 });
@@ -817,7 +829,8 @@
 		  center: [52.38472, 4.90368],
 		  zoom: 13
 		});
-		L.marker([52.38398, 4.90304]).addTo(map).bindPopup("<b>Dantesoftware</b><br />A-Lab");
+		L.marker([52.38398, 4.90304], {color:"#fac828"}).addTo(map)
+			.bindPopup("<b>Dantesoftware</b><br />A-Lab");
 		
 		map.addLayer(layer);
 	</script>
