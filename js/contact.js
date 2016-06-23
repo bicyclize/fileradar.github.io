@@ -1,6 +1,6 @@
 $(function()
 {
-    $("contact form").submit(function()
+    $("#contact form").submit(function()
     {
         var form = $(this);
         var str = form.serialize();
