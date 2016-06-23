@@ -770,7 +770,7 @@
 					</div>
 				</div>
 				<!-- Start Form -->
-				<form class="contact form">
+				<form class="well">
 					<div class="row">
 						<div class="span6 pull-left">
 							<label>Your name</label>
@@ -829,7 +829,15 @@
 		  center: [52.38472, 4.90368],
 		  zoom: 13
 		});
-		L.marker([52.38398, 4.90304], {color:"#fac828"}).addTo(map)
+		var dante = L.icon({
+    iconUrl: 'img/logo2.png',
+   	iconSize:     [25, 25], // size of the icon
+    //shadowSize:   [50, 64], // size of the shadow
+    //iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+    //shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+		L.marker([52.3841, 4.903], {icon: dante}).addTo(map)
 			.bindPopup("<b>Dantesoftware</b><br />A-Lab");
 		
 		map.addLayer(layer);
