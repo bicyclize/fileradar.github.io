@@ -537,14 +537,16 @@
 
 					<div class="col_two_third">
 
+							
 						<div class="col_one_third">
 
-							<div class="widget clearfix">
-
+							
+							<div id="mapblack" style="height: 300px">
 								<!--img src="images/footer-widget-logo.png" alt="" class="footer-logo"-->
 
 								
 								<div style="background: url('images/world-map.png') no-repeat center center; background-size: 100%;">
+
 									
 								
 									<address>
@@ -605,6 +607,29 @@
 	<!-- Footer Scripts
 	============================================= -->
 	<script type="text/javascript" src="js/functions.js"></script>
+	<script>
+		var layer = L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png',{
+  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="https://cartodb.com/attributions">CartoDB</a>'
+});
+
+		var map = L.map('mapblack', {
+		  scrollWheelZoom: false,
+		  center: [52.38472, 4.90368],
+		  zoom: 13
+		});
+		var dante = L.icon({
+    iconUrl: 'img/logo2.png',
+   	iconSize:     [25, 25], // size of the icon
+    //shadowSize:   [50, 64], // size of the shadow
+    //iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+    //shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+		L.marker([52.3841, 4.903], {icon: dante}).addTo(map)
+			.bindPopup("<b>Fileradar</b><br />A-Lab");
+		
+		map.addLayer(layer);
+	</script>
 
 </body>
 </html>
