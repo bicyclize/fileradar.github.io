@@ -19,6 +19,8 @@
 	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="css/colors.css" type="text/css" />
+		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css">
+	<link rel="stylesheet" href="css/leaflet.css">
 
 	<!-- Document Title
 	============================================= -->
@@ -54,7 +56,7 @@
 					<nav id="primary-menu" class="dark">
 
 						<ul>
-							<li class=""><a href="index.html"><div>Home</div></a>
+							<li class="mega-menu"><a href="index.html"><div>Home</div></a>
 							</li>
 							
 							<li class="mega-menu"><a href="#"><div>Products</div></a>
@@ -101,7 +103,7 @@
 									</ul>
 								</div>
 							</li>
-							<li class="mega-menu current"><a href="portfolio-1.html"><div>Portfolio</div></a>
+							<li class="current mega-menu"><a href="portfolio.html"><div>Portfolio</div></a>
 								
 							</li>
 							<li class="mega-menu"><a href="http://utrecht.dantesoftware.com" target="_blank""><div>Demo</div></a>
@@ -109,15 +111,30 @@
 							</li>
 							
 							<li class="mega-menu"><a href="team.html"><div>Team</div></a>
-								
 							</li>
+							
+							
 						</ul>
 
-						
+						<!-- Top Cart
+						============================================= -->
+						<div id="top-cart">
+							<a href="http://www.twitter.com/fileradarNL" class="icon-twitter">
+							
+								</a>
+						</div><!-- #top-cart end -->
 
-						
 
+
+
+						<!-- Top Search
+						============================================= -->
+						<div id="top-search">
+							<a href="mailto:info@fileradar.nl" class="icon-email2">
+							</a>
+						</div>
 					</nav><!-- #primary-menu end -->
+
 
 				</div>
 
@@ -157,7 +174,7 @@
 						<li><a href="#" data-filter=".pf-NA">Network-Analytics</a></li>
 						<li><a href="#" data-filter=".pf-RTR">Realtime Traffic Radar</a></li>
 						<li><a href="#" data-filter=".pf-360">Traffic 360</a></li>
-						<li><a href="#" data-filter=".pf-E6">Shockwave Tracker</a></li>
+						<li><a href="#" data-filter=".pf-ST">Shockwave Tracker</a></li>
 						<li><a href="#" data-filter=".pf-E6">Engine 6</a></li>
 						
 
@@ -171,8 +188,9 @@
 					============================================= -->
 					<div id="portfolio" class="portfolio grid-container portfolio-1 clearfix">
 	<!-- AFM MAAS -->
-						<article class="portfolio-item pf-adapt pf-360 clearfix">
+						<article class="portfolio-item pf-adapt pf-ST pf-RTR clearfix">
 							<div class="iportfolio">
+
 								<div class="portfolio-image">
 									<a href="#">
 										<img src="images/portfolio/highway.jpg" alt="AFM-system">
@@ -182,16 +200,12 @@
 										
 									</div>
 								</div>
-
-
-
-
-								
+	
 								<div class="portfolio-desc">
 								<h3><a href="http://www.rotterdam.nl/maastunnel">AFM</a></h3>
 
 								<span><a href="Real-Times.html">Real-Time Radar</a>, <a href="#">HTML5 Browser</a></span>
-									<p>The Adaptive Queue Management system, or AFM-system, is a system that is being built for the Maastunnel, one of the most important links between the northern and southern parts of Rotterdam, the Netherlands. The goal of AFM is to ensure a safe usage of the Maastunnel as long as possible, while maintaining the level of service of the traffic network around the tunnel. To realise that goal, it is necessary to measure the real-time traffic situation on a large number of locations in Rotterdam.</p>
+									<p>The Adaptive Queue Management system, or AFM, is a system that is a safety system for the Maastunnel, one of the most important links between the northern and southern parts of Rotterdam. The goal of AFM is to ensure safe usage of the Maastunnel up to peak volumes, while maintaining seamless network flow around the tunnel.</p>
 									<p>Fileradar is responsible for the monitoring of queues at over 40 intersections in Rotterdam using streaming radar data. The system will be realised and thoroughly tested between 2016-2018 and will have to meet the highest reliability standards, as the AFM system is primarily a safety system.</p>
 								<ul class="iconlist">
 									<li></i> <strong>Client:</strong> <a href="http://www.rotterdam.nl/maastunnel" target="_blank"> Gemeente Rotterdam</a></li>
@@ -214,7 +228,7 @@
 								</div>
 						</article>
 	<!-- ADAPT -->
-						<article class="portfolio-item pf-adapt pf-360 clearfix">
+						<article class="portfolio-item pf-adapt pf-NA pf-360 clearfix">
 							<div class="portfolio-image">
 								<a href="adapt.html">
 									<img src="images/portfolio/adapt1.png" >
@@ -253,7 +267,7 @@
 						</article>
 
 			<!-- RHOON -->	
-						<article class="portfolio-item pf-adapt pf-360 clearfix">
+						<article class="portfolio-item pf-adapt pf-NA pf-TT clearfix">
 							<div class="portfolio-image">
 								<a href="t360.html">
 									<img src="http://bereiknu.nl/sites/bereiknu.nl/files/styles/manual_crop_-_pagina_930_x_450/public/REGIODESK%20RHOON%20HR%20-%2010.jpg?itok=UziVlwFo&c=1f19dbd835567a61cc747ca4ab67471d" >
@@ -277,7 +291,7 @@
 
 						
 	<!-- PPA - WEST -->
-						<article class="portfolio-item pf-adapt pf-360 clearfix">
+						<article class="portfolio-item pf-NA pf-TT pf-ST pf-GNV clearfix">
 							<div class="portfolio-image">
 								<a href="gnv.html">
 									<img src="images/portfolio/t360.png" >
@@ -310,7 +324,7 @@
 							</div>
 						</article>
 		<!-- Goylaan -->					
-						<article class="portfolio-item pf-adapt pf-360 clearfix">
+						<article class="portfolio-item pf-NA pf-E6 clearfix">
 							<div class="portfolio-image">
 								<a href="adapt.html">
 									<img src="images/portfolio/adapt2.png" >
@@ -333,7 +347,7 @@
 
 		<!-- app -->				
 
-						<article class="portfolio-item pf-adapt pf-360 clearfix">
+						<article class="portfolio-item pf-TT pf-RTR pf-ST clearfix">
 							<div class="portfolio-image">
 								<a href="app.html">
 									<img src="images/services/app1.png"  >
@@ -354,11 +368,6 @@
 							</div>
 						</article>
 
-
-						
-
-						
-
 					</div><!-- #portfolio end -->
 
 				</div>
@@ -371,114 +380,16 @@
 		============================================= -->
 		<footer id="footer" class="dark">
 
-			<div class="container">
-
-				<!-- Footer Widgets
-				============================================= -->
-				<div class="footer-widgets-wrap clearfix">
-
-					<div class="col_two_third">
-
-						<div class="col_one_third">
-
-							<div class="widget clearfix">
-
-								<!--img src="images/footer-widget-logo.png" alt="" class="footer-logo"-->
-
-								
-
-								<div style="background: url('images/world-map.png') no-repeat center center; background-size: 100%;">
-									<address>
-										<strong>Headquarters:</strong><br>
-										A-Lab, 2 Overhoeksplein<br> Amsterdam, 1031KS
-									</address>
-									<abbr title="Phone Number"><strong>Phone:</strong></abbr>+31 (0) 614 60 75 48<br>
-									<abbr title="Email Address"><strong>Email:</strong></abbr> info@fileradar.nl
-								</div>
-
-							</div>
-
-						</div>
-
-						<div class="col_one_third">
-
-							<div class="widget widget_links clearfix">
-
-								
-
-							</div>
-
-						</div>
-
-						<div class="col_one_third col_last">
-
-							<div class="widget clearfix">
-								
-							</div>
-
-						</div>
-
-					</div>
-
-					<div class="col_one_third col_last">
-
-						<div class="widget clearfix" style="margin-bottom: -20px;">
-
-							<div class="row">
-
-								<div class="col-md-6 bottommargin-sm">
-									<div class="counter counter-small"><span data-from="50" data-to="150342654" data-refresh-interval="80" data-speed="3000" data-comma="true"></span></div>
-									<h5 class="nobottommargin">Total Data</h5>
-								</div>
-
-								<div class="col-md-6 bottommargin-sm">
-									<div class="counter counter-small"><span data-from="100" data-to="18465" data-refresh-interval="50" data-speed="2000" data-comma="true"></span></div>
-									<h5 class="nobottommargin">Views</h5>
-								</div>
-
-							</div>
-
-						</div>
-
-						
-
-						<div class="widget clearfix" style="margin-bottom: -20px;">
-
-							<div class="row">
-
-								<div class="col-md-6 clearfix bottommargin-sm">
-									<a href="http://www.twitter.com/fileradarNL" class="social-icon si-dark si-colored si-twitter nobottommargin" style="margin-right: 10px;">
-										<i class="icon-twitter"></i>
-										<i class="icon-twitter"></i>
-									</a>
-									<a href="#"><small style="display: block; margin-top: 3px;"><strong>Follow us</strong><br>on Twitter</small></a>
-								</div>
-								<!--div class="col-md-6 clearfix">
-									<a href="#" class="social-icon si-dark si-colored si-rss nobottommargin" style="margin-right: 10px;">
-										<i class="icon-rss"></i>
-										<i class="icon-rss"></i>
-									</a>
-									<a href="#"><small style="display: block; margin-top: 3px;"><strong>Subscribe</strong><br>to RSS Feeds</small></a>
-								</div-->
-
-							</div>
-
-						</div>
-
-					</div>
-
-				</div><!-- .footer-widgets-wrap end -->
-
-			</div>
+			<div id="mapblack" style="height: 400px">		
 
 			
-
+			</div>
 		</footer><!-- #footer end -->
 
 	</div><!-- #wrapper end -->
 
 	<!-- Go To Top
-	============================================= -->
+	============================================= --> 
 	<div id="gotoTop" class="icon-angle-up"></div>
 
 	<!-- External JavaScripts
@@ -489,6 +400,39 @@
 	<!-- Footer Scripts
 	============================================= -->
 	<script type="text/javascript" src="js/functions.js"></script>
+	<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script> <!-- leaflet -->
+	<script>
+		var layer = L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png',{
+  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="https://cartodb.com/attributions">CartoDB</a>'
+});
+
+	var map = L.map('mapblack', {
+		  scrollWheelZoom: false,
+		  center: [52.2, 4.90368],
+		  zoom: 8
+		});
+
+	var logo = L.icon({
+    iconUrl: 'images/logo1.png',
+   	iconSize:     [25, 25], // size of the icon
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
+
+
+		L.marker([52.3841, 4.903], {icon: logo}).addTo(map)
+			.bindPopup("<a>A-Lab, 101, Fileradar <br> 2 Overhoeksplein<br> Amsterdam, 1031KS</a>");
+
+		L.marker([52.017, 4.3465], {icon: logo}).addTo(map)
+			.bindPopup('<a>Fileradar, <br> F Matthesstraat 30-II<br> Delft, 2613ZZ<br>+31(0) 614 60 75 48</a>');
+
+		
+		map.addLayer(layer);
+
+
+	
+
+	</script>
 
 </body>
 </html>

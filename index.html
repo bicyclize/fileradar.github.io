@@ -19,7 +19,9 @@
 	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="css/colors.css" type="text/css" />
-
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css">
+	<link rel="stylesheet" href="css/leaflet.css">
+	
 	<!-- Document Title
 	============================================= -->
 	<title>Fileradar</title>
@@ -101,7 +103,7 @@
 									</ul>
 								</div>
 							</li>
-							<li class="mega-menu"><a href="portfolio-1.html"><div>Portfolio</div></a>
+							<li class="mega-menu"><a href="portfolio.html"><div>Portfolio</div></a>
 								
 							</li>
 							<li class="mega-menu"><a href="http://utrecht.dantesoftware.com" target="_blank""><div>Demo</div></a>
@@ -110,8 +112,27 @@
 							
 							<li class="mega-menu"><a href="team.html"><div>Team</div></a>
 							</li>
+							
+							
 						</ul>
 
+						<!-- Top Cart
+						============================================= -->
+						<div id="top-cart">
+							<a href="http://www.twitter.com/fileradarNL" class="icon-twitter">
+							
+								</a>
+						</div><!-- #top-cart end -->
+
+
+
+
+						<!-- Top Search
+						============================================= -->
+						<div id="top-search">
+							<a href="mailto:info@fileradar.nl" class="icon-email2">
+							</a>
+						</div>
 					</nav><!-- #primary-menu end -->
 
 				</div>
@@ -529,74 +550,16 @@
 		============================================= -->
 		<footer id="footer" class="dark">
 
-			<div class="container">
+			<div id="mapblack" style="height: 400px">		
 
-				<!-- Footer Widgets
-				============================================= -->
-				<div class="footer-widgets-wrap clearfix">
-
-					<div class="col_two_third">
-
-							
-						<div class="col_one_third">
-
-							
-							<div id="mapblack" style="height: 300px">
-								<!--img src="images/footer-widget-logo.png" alt="" class="footer-logo"-->
-
-								
-								<div style="background: url('images/world-map.png') no-repeat center center; background-size: 100%;">
-
-									
-								
-									<address>
-										<strong>Amsterdam</strong><br>
-										A-Lab, 2 Overhoeksplein<br> Amsterdam, 1031KS
-									</address>
-									<address>
-										<strong>Delft</strong><br>
-										F Matthesstraat 30-II<br> Delft, 2613 ZZ
-									</address>
-									<abbr> +31 (0) 614 60 75 48</abbr>
-
-								</div>
-									
-
-
-							</div>
-
-						</div>
-
-						<div class="col_one_third">
-
-							<div class="widget clearfix">
-								
-								<a href="mailto:info@fileradar.nl" class="social-icon si-dark si-colored si-light si-mail">
-										<i class="icon-mail"></i>
-										<i class="icon-mail"></i>
-									</a>
-									
-							
-
-								<a href="http://www.twitter.com/fileradarNL" class="social-icon si-dark si-colored si-twitter nobottommargin" style="margin-right: 10px;">
-										<i class="icon-twitter"></i>
-										<i class="icon-twitter"></i>
-									</a>
-									
-								
-
-							</div>
-
-						</div>
-					</div>
-				</div><!-- .footer-widgets-wrap end -->
+			
 			</div>
 		</footer><!-- #footer end -->
 
 	</div><!-- #wrapper end -->
 
 	<!-- Go To Top
-	============================================= -->
+	============================================= --> 
 	<div id="gotoTop" class="icon-angle-up"></div>
 
 	<!-- External JavaScripts
@@ -607,29 +570,38 @@
 	<!-- Footer Scripts
 	============================================= -->
 	<script type="text/javascript" src="js/functions.js"></script>
+	<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script> <!-- leaflet -->
 	<script>
 		var layer = L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png',{
   attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="https://cartodb.com/attributions">CartoDB</a>'
 });
 
-		var map = L.map('mapblack', {
+	var map = L.map('mapblack', {
 		  scrollWheelZoom: false,
-		  center: [52.38472, 4.90368],
-		  zoom: 13
+		  center: [52.2, 4.90368],
+		  zoom: 8
 		});
-		var dante = L.icon({
-    iconUrl: 'img/logo2.png',
+
+	var logo = L.icon({
+    iconUrl: 'images/logo1.png',
    	iconSize:     [25, 25], // size of the icon
-    //shadowSize:   [50, 64], // size of the shadow
-    //iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
-    //shadowAnchor: [4, 62],  // the same for the shadow
     popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 });
-		L.marker([52.3841, 4.903], {icon: dante}).addTo(map)
-			.bindPopup("<b>Fileradar</b><br />A-Lab");
+
+
+
+		L.marker([52.3841, 4.903], {icon: logo}).addTo(map)
+			.bindPopup("<a>A-Lab, 101, Fileradar <br> 2 Overhoeksplein<br> Amsterdam, 1031KS</a>");
+
+		L.marker([52.017, 4.3465], {icon: logo}).addTo(map)
+			.bindPopup('<a>Fileradar, <br> F Matthesstraat 30-II<br> Delft, 2613ZZ<br>+31(0) 614 60 75 48</a>');
+
 		
 		map.addLayer(layer);
-	</script>
 
+
+	
+
+	</script>
 </body>
 </html>
