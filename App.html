@@ -375,17 +375,20 @@
 });
 
 
+var customOptions =
+        {
+        'maxWidth': '200',
+        'className' : 'custom',
+        }
 
 		L.marker([52.3841, 4.903], {icon: logo}).addTo(map)
-			.bindPopup("<a>A-Lab, 101, Fileradar <br> 2 Overhoeksplein<br> Amsterdam, 1031KS</a>");
+			.bindPopup("<a>A-Lab, 101, Fileradar <br> 2 Overhoeksplein<br> Amsterdam, 1031KS</a>", customOptions);
 
 		L.marker([52.017, 4.3465], {icon: logo}).addTo(map)
-			.bindPopup('<a>Fileradar, <br> F Matthesstraat 30-II<br> Delft, 2613ZZ<br>+31(0) 614 60 75 48</a>');
+			.bindPopup('<a>Fileradar, <br> F Matthesstraat 30-II<br> Delft, 2613ZZ<br>+31(0) 614 60 75 48</a>',customOptions);
 
 		
 		map.addLayer(layer);
-
-
 	
 
 	</script>
