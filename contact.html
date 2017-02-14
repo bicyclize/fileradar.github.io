@@ -164,16 +164,14 @@
 
 				<div class="container clearfix">
 
-					
-
-					<div class="col-md-6">
 
 						<!-- Contact Info
 						============================================= -->
-						<div class="col_two_fifth">
+						<div class="col_one_third">
 
 							<address>
-								<strong>Headquarters:</strong><br>
+								<h5>Headquarters:</h5><br>
+								<strong>Amsterdam:</strong><br>
 								A-Lab, 101, Fileradar<br> 
 								2 Overhoeksplein<br>
 								Amsterdam, 1031KS<br>
@@ -186,32 +184,35 @@
 							</address>
 							</div>
 
-						<div class="col_two_fifth">
-							<div id="number" data-last="1234">949<span>XXXX</span></div>
-							<abbr title="Phone Number"><strong>Phone:</strong></abbr> 
-
+						<div class="col_one_third">
 							
-							<abbr title="Email Address"><strong>Email:</strong></abbr> info@fileradar.nl
+							
+							<div class="toggle">
+								<div class="togglet"><i class="toggle-closed icon-ok-circle"></i><i class="toggle-open icon-remove-circle"></i>Phone:</div>
 
-						</div>
+								<div class="togglec">+31(0) 614 60 75 48</div>
+							</div>
 						
+							<div class="toggle">
+								<div class="togglet"><i class="toggle-closed icon-ok-circle"></i><i class="toggle-open icon-remove-circle"></i>Email:</div>
+								<div class="togglec">info@fileradar.nl</div>
+
+							</div>
+						</div>
 						<!-- Contact Info End -->
 
 						<!-- Testimonials
 						============================================= -->
-						<div class="col_two_fifth col_last">
+						<div class="col_one_third col_last">
 
 							
-							<a class="twitter-timeline" data-width="800" data-height="340" data-theme="light" data-link-color="#e6b800" href="https://twitter.com/fileradarNL">Tweets by fileradarNL</a> 
+							<a class="twitter-timeline"  data-theme="light" data-link-color="#e6b800" href="https://twitter.com/fileradarNL">Tweets by fileradarNL</a> 
 						</div>
 
 						<!-- Testimonial End -->
 
-						
 
-						
-
-					</div>
+				
 
 				</div>
 
@@ -278,14 +279,20 @@ var customOptions =
 		
 		map.addLayer(layer);
 
-
-$('#number').toggle(function() {
-    $(this).find('span').text( $(this).data('last') );
-},function() {
-    $(this).find('span').text( 'XXXX' );
-});	
-
 	</script>
+
+	<script type="text/javascript">
+function toggleContent() {
+  // Get the DOM reference
+  var contentId = document.getElementById("content");
+  // Toggle 
+  contentId.style.display == "block" ? contentId.style.display = "none" : 
+contentId.style.display = "block"; 
+}
+	</script>
+	<button onclick="toggleContent()">Toggle</button>
+
+	
 
 </body>
 </html>
