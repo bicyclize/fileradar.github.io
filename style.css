@@ -214,6 +214,9 @@ table,
 fieldset,
 form { margin-bottom: 30px; }
 
+#twitter-widget-0 {height:380px !important;}
+
+
 small { font-family: 'Lato', sans-serif; }
 
 
