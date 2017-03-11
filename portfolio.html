@@ -21,7 +21,6 @@
 	<link rel="stylesheet" href="css/colors.css" type="text/css" />
 		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css">
 	<link rel="stylesheet" href="css/leaflet.css">
-
 	<!-- Document Title
 	============================================= -->
 	<title>Fileradar</title>
@@ -29,7 +28,6 @@
 </head>
 
 <body class="stretched">
-
 	<!-- Document Wrapper
 	============================================= -->
 	<div id="wrapper" class="clearfix">
@@ -59,14 +57,14 @@
 							<li class="mega-menu"><a href="index.html"><div>Home</div></a>
 							</li>
 							
-							<li class="mega-menu"><a href="#"><div>Products</div></a>
+							<li class="mega-menu"><a href="index.html#module"><div>Modules</div></a>
 								<div class="mega-menu-content style-2 clearfix">
 									<ul class="mega-menu-column col-md-3">
 										<li class="mega-menu-title"><a href="#"><div>Past analytics</div></a>
 											<ul>
 												
 												<li><a href="network.html"><div>Network analysis</div></a></li>
-												<li><a href="Shock-wave.html"><div>Shock-wave Tracker</div></a></li>
+												<li><a href="Congestion.html"><div>Congestion Tracker</div></a></li>
 											</ul>
 										</li>
 									</ul>
@@ -74,7 +72,7 @@
 										<li class="mega-menu-title"><a href="#"><div>Present analytics</div></a>
 											<ul>
 												<li><a href="Real-Time.html"><div>Real-Time Traffic Radar</div></a></li>
-												<li><a href="Shock-wave.html"><div>Shock-wave Tracker</div></a></li>
+												<li><a href="Congestion.html"><div>Congestion Tracker</div></a></li>
 												<li><a href="gnv.html"><div>Coordinated Network Management</div></a></li>
 												<li><a href="network.html"><div>Network analysis</div></a></li>
 												
@@ -353,10 +351,47 @@
 		============================================= -->
 		<footer id="footer" class="dark">
 
-			<div id="mapblack" style="height: 400px">		
-
 			
-			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights">
+
+				<div class="container clearfix">
+
+					<div class="col_half">
+						Copyrights &copy; 2017 All Rights Reserved by Fileradar BV.<br>
+						<div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
+					</div>
+
+					<div class="col_half col_last tright">
+						<div class="fright clearfix">
+							
+							<a href="http://www.twitter.com/fileradarNL" target="_blank" class="social-icon si-small si-borderless si-twitter">
+								<i class="icon-twitter"></i>
+								<i class="icon-twitter"></i>
+							</a>
+
+							<a href="http://www.github.com/fileradar" target="_blank" class="social-icon si-small si-borderless si-github">
+								<i class="icon-github"></i>
+								<i class="icon-github"></i>
+							</a>
+
+							<a href="http://www.linkedin.com/fileradar" target="_blank" class="social-icon si-small si-borderless si-linkedin">
+								<i class="icon-linkedin"></i>
+								<i class="icon-linkedin"></i>
+							</a>
+						</div>
+
+						<div class="clear"></div>
+
+						<i class="icon-envelope2"></i> info@fileradar.nl <span class="middot">&middot;</span> <i class="icon-headphones"></i> +31 614 60 75 48<span class="middot">&middot;</span> <i class="icon-skype2"></i> FileRadar
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
 		</footer><!-- #footer end -->
 
 	</div><!-- #wrapper end -->
@@ -373,40 +408,12 @@
 	<!-- Footer Scripts
 	============================================= -->
 	<script type="text/javascript" src="js/functions.js"></script>
-	<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script> <!-- leaflet -->
 	<script>
-		var layer = L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png',{
-  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="https://cartodb.com/attributions">CartoDB</a>'
-});
+	$(function() {
+		$( "#side-navigation" ).tabs({ show: { effect: "fade", duration: 400 } });
+	});
+</script>
 
-	var map = L.map('mapblack', {
-		  scrollWheelZoom: false,
-		  center: [52.2, 4.90368],
-		  zoom: 8
-		});
-
-	var logo = L.icon({
-    iconUrl: 'images/logo1.png',
-   	iconSize:     [25, 25], // size of the icon
-    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
-});
-
-
-var customOptions =
-        {
-        'maxWidth': '200',
-        'className' : 'custom',
-        }
-
-		L.marker([52.3841, 4.903], {icon: logo}).addTo(map)
-			.bindPopup("<a>A-Lab, 101, Fileradar <br> 2 Overhoeksplein<br> Amsterdam, 1031KS</a>", customOptions);
-
-		L.marker([52.017, 4.3465], {icon: logo}).addTo(map)
-			.bindPopup('<a>Fileradar, <br> F Matthesstraat 30-II<br> Delft, 2613ZZ<br>+31(0) 614 60 75 48</a>',customOptions);
-
-		
-		map.addLayer(layer);
-	</script>
 
 </body>
 </html>
