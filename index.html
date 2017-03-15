@@ -1,906 +1,614 @@
 <!DOCTYPE html>
-<html lang="en">
+<html dir="ltr" lang="en-US">
 <head>
-	<meta charset="utf-8" />
-	
-	<title>Dante Software</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
-	<meta name="HandheldFriendly" content="true">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
-	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-	
-	<!-- Import CSS -->
-	<link rel="stylesheet" href="css/base.css">
-	<link rel="stylesheet" href="css/jms-style.css">
-	<link rel="icon" type="image/png" href="logo.png">
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Fileradar" />
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
+	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="css/colors.css" type="text/css" />
 	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css">
+	<link rel="stylesheet" href="css/leaflet.css">
 	
-
-	<!--[if lt IE 10]>
-		<link href= "css/ie.css" rel= "stylesheet" media= "all" />
-	<![endif]-->
-
-	<!--[if lt IE 9]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-	
+	<!-- Document Title
+	============================================= -->
+	<title>Fileradar</title>
+<link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
 </head>
 
-<body>
+<body class="stretched" >
 
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
 
-	<!-- Start Homepage -->
-	<header id="home">
-		<div class="header-bg"></div>
-		<div class="pattern"></div>
-		<div class="container">
-			<div class="row">
-				<div class="span4">
-					<a href="index.html" class="logo"><img src="img/logo1.png" alt=""></a>
-				</div>
-				<!-- Navigation -->
-				<nav id="topnav" class="span8">
-					<ul id="fixed-nav" class="visible-desktop">
-						<li class="current scroll-link"><a href="#home">Home</a></li>
-						<li><a class="scroll-link" href="#about">Dante</a></li>
-						<li><a class="scroll-link" href="#demo">Demo</a></li>
-						<li><a class="scroll-link" href="#news">News</a></li>
-						<li><a class="scroll-link" href="#module">Modules</a></li>
-						<li><a class="scroll-link" href="#portfolio">Cases</a></li>
-						<li><a class="scroll-link" href="#partners">Partners</a></li>
-						<li><a class="external" href="vacancies.html#job">Vacancies</a></li>
-						<li><a class="scroll-link" href="#contact">Contact</a></li>
-					</ul>
-				</nav>
-				<!-- End Navigation -->
-			</div>
-			<div class="row">
-				<div class="span12">
-					<div class="span6">	
-					<div id="slidecaption">
-						<span class="color-text">Dante</span> dynamic <span class="color-text">mapping</span> solutions
-						<div class="sub-caption">Modular Dynamic GIS platform with HTML view</div>
-						<a href="#about" class="btn white scroll-link">Get started</a>
-					
-					</div>
-				</div>
-			</div>
+		<!-- Header
+		============================================= -->
+		<header id="header" class="transparent-header full-header" data-sticky-class="not-dark">
 
-		</div>
-	</header>
+			<div id="header-wrap">
 
-	
+				<div class="container clearfix">
 
-	<div class="wrapper">
-	
-		<!-- Start Sticky Navigation -->
-		<nav id="mainnav">
-			<div class="container">
-				<div class="row">
-					<div class="span4">
-						<a href="index.html" class="logo"><img src="img/logo2.png" alt=""></a>
-					</div>
-					<div class="span8">
-						<ul id="fluid-nav" class="fluid-navigation visible-desktop">
-							<li class="current scroll-link"><a href="#home">Home</a></li>
-						<li><a class="scroll-link" href="#about">Dante</a></li>
-						<li><a class="scroll-link" href="#demo">Demo</a></li>
-						<li><a class="scroll-link" href="#news">News</a></li>
-						<li><a class="scroll-link" href="#module">Modules</a></li>
-						<li><a class="scroll-link" href="#portfolio">Cases</a></li>
-						<li><a class="scroll-link" href="#partners">Partners</a></li>
-						<li><a class="external" href="vacancies.html#job">Vacancies</a></li>
-						<li><a class="scroll-link" href="#contact">Contact</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</nav>
-		<!-- End Sticky Navigation -->
-		
+					<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
 
-		<!-- Start About Page -->
-		<section id="about" class="page">
-			<div class="container">
-				<div class="row">
-					<div class="span12">
-						<div class="title">DANTE Dynamic Mapping</div>
-						<hr>
-						<div class="lead-small">Dante is our core GIS platform that <br class="visible-desktop" />  allows modular customisation at all stages of implementation.</div>
-						<p>
-						</p>
-						<div class="row slider-services">
-							<div class="span8">
-								<img src="images/Prediction engine.png" alt="">
-							</div>
-							<div class="span4">
-								<!-- Start Services List -->
-								<div class="services">
-									<div class="services-title hidden-tablet">Dante in brief</div>
-									<ul class="services-list">
-										<li>Modular GIS software platform</li>
-										<li>Big data ready</li>
-										<li>Hierarchically organised spatial data</li>
-										<li>Fast configuration of new sources</li>
-										<li>Data type independent</li>
-										<li>Launch directly from the browser</li>
-										<li>Interactive presentation</li>
-										<li>Geographic web services hosting</li>
-										<li>Available through an API</li>
+					<!-- Logo
+					============================================= -->
+					<div id="logo">
+						<a href="index.html" class="standard-logo" data-dark-logo="images/logo1.png"><img src="images/logo1.png" alt="Fileradar"></a>
+						<a href="index.html" class="retina-logo" data-dark-logo="images/logo2.png"><img src="images/logo2.png" alt="Fileradar logo"></a>
+					</div><!-- #logo end -->
+
+					<!-- Primary Navigation
+					============================================= -->
+					<nav id="primary-menu" class="dark">
+
+						<ul>
+							<li class="current"><a href="index.html"><div>Home</div></a>
+							</li>
+							
+							<li class="mega-menu"><a href="index.html#module"><div>Modules</div></a>
+								<div class="mega-menu-content style-2 clearfix">
+									<ul class="mega-menu-column col-md-3">
+										<li class="mega-menu-title"><a href="#"><div>Past analytics</div></a>
+											<ul>
+												
+												<li><a href="network.html"><div>Network analytics</div></a></li>
+												<li><a href="Congestion.html"><div>Congestion Tracker</div></a></li>
+											</ul>
+										</li>
+									</ul>
+									<ul class="mega-menu-column col-md-3">
+										<li class="mega-menu-title"><a href="#"><div>Present analytics</div></a>
+											<ul>
+												<li><a href="Real-Time.html"><div>Real-Time Traffic Radar</div></a></li>
+												<li><a href="Congestion.html"><div>Congestion Tracker</div></a></li>
+												<li><a href="gnv.html"><div>Coordinated Network Management</div></a></li>
+												<li><a href="network.html"><div>Network analysis</div></a></li>
+												
+											</ul>
+										</li>
+									</ul>
+									<ul class="mega-menu-column col-md-3">
+										<li class="mega-menu-title"><a href="#"><div>Future predictions</div></a>
+											<ul>
+												<li><a href="Traveltimes.html"><div>Travel time prediction</div></a></li>
+												<li><a href="app.html"><div>Fileradar App</div></a></li>
+												
+												<li><a href="engine6.html"><div>Engine 6 predictions</div></a></li>
+												
+											</ul>
+										</li>
+									</ul>
+									<ul class="mega-menu-column col-md-3">
+										<li class="mega-menu-title"><a href="#"><div>All-in-one</div></a>
+											<ul>
+												<li><a href="t360.html"><div>Traffic 360</div></a></li>
+												<li><a href="adapt.html"><div>ADAPT Operator Support</div></a></li>
+												
+											</ul>
+										</li>
 									</ul>
 								</div>
-								<!-- End Services List -->
-							</div>
-						</div>
-						
-					
-
-			<!-- Start Tabs -->
-						<h5>Due to the modular approach, Dante is highly configurable during all three steps of development</h5>
-						<p>Some examples of the variability of the model-view-controller, without aiming at completeness:</p>
-						<div class="tabs">
-							<ul>
-								<li id="tab1" class="current">Data</li>
-								<li id="tab2">Model</li>
-								<li id="tab3">Control</li>
-								<li id="tab4">View</li>
-							</ul>
-							<div class="tab-content-wrp">
-		    					<div id="tab1-content" class="tab-content active">
-										<div class="container">	
-											<div class="row">
-												
-												<div class="row">
-													<div class="span3">
-													
-														<img src="images/honey1.png" width="150" height="150" style="margin: 0px 80px">
-														<hr class="visible-phone">
-													</div>
-													<div class="span3">
-														<h5>Formats</h5>
-														<p>Json, XML, Protofub</p>
-														<p>openLR, datex2, NTCIP</p>
-														<p>CSV, excel, noSQL, SQL</p>
-													</div>
-													<div class="span3">
-														<h5>Sources</h5>
-														<p>Opensreetmap, Twitter, weather services, websites</p>
-														<p>Propriatery software programs: shapefiles, autocad, vissim, matlab, etc</p>
-														<p>Video feeds, country specific traffic sources for NL, UK</p>
-														
-													</div>
-												</div>
-											</div>
-										</div>
-		    					</div>
-		    					<div id="tab2-content" class="tab-content">
-		    							<div class="container">	
-											<div class="row">
-												<div class="row">
-													<div class="span3">
-													
-														<img src="images/honey2.png" width="150" height="150" style="margin: 0px 80px">
-														<hr class="visible-phone">
-													</div>
-													<div class="span9">
-														<h5>Standardization</h5>
-														<p>Elements define a location in time and space</p>
-														<p>Dataobjects linked to elements</p>
-														
-													</div>
-												</div>
-											</div>
-										</div>
-		    					</div>
-		    					<div id="tab3-content" class="tab-content">
-		    							<div class="container">	
-											<div class="row">
-												<div class="row">
-													<div class="span3">
-													
-														<img src="images/honey3.png" width="150" height="150" style="margin: 0px 80px">
-														<hr class="visible-phone">
-													</div>
-													<div class="span3">
-																<h5>Industry standard techniques</h5>
-																<p>Java8</p>
-																<p>OSGI</p>
-																<p>Jetty/Netty</p>
-																
-														
-													</div>
-													<div class="span3">
-																<h5>Standardization of data sources as a first step</h5>
-																<p>Link, nodes, segments, areas</p>
-																<p>Algorithms work wit standardised data</p>
-																	
-														
-													</div>
-													<div class="span3">
-																<h6>Traffic Algorithms</h6>
-																<p>Queue tracking on motorways and cities</p>
-																<p>Shockwave tracker</p>
-														
-													</div>
-												</div>
-											</div>
-										</div>
-		    					</div>
-		    					
-		    					<div id="tab4-content" class="tab-content">
-		    							<div class="container">	
-											<div class="row">
-												<div class="row">
-													<div class="span3">
-													
-														<img src="images/honeyfull.png" width="150" height="150" style="margin: 0px 80px">
-														<hr class="visible-phone">
-													</div>
-													<div class="span9">
-														<h5>Rich html5 app for browser and mobile</h5>
-														<p>Interactive map with options to dinamically adjust time</p>
-														<p>Situational Awareness: focus only on extra-ordinary eventualities</p>
-														<p>Traffic 360, zooming-in/out adjusts datasource volume and intensity to reflect scope</p>
-														<p>Leveraging NodeJs, LeafletJs, Meteor</p>
-														
-													</div>
-												</div>
-											</div>
-										</div>
-		    					</div>
-							</div>
-						</div>
-						<!-- End Tabs -->
-			<!-- End Tabs -->
-						
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End About Page -->
-	
-
-	<!-- Start Demo Page -->
-		<section id="demo" class="page page-gray">
-			<div class="container">
-				<div class="row">	
-					<div class="span12">
-					<div class="title">Demo</div>
-					<hr>
-					<!--<div class="container">
-						<iframe class="container" src="http://acc.dantesoftware.com"  frameborder="0" noresize="noresize" data-view="fullScreenPreview" style="height: 500px">
-						</iframe>
-					</div-->
-					<div class="container isotope">
-				    			<a href="http://acc.dantesoftware.com" class="project-wrp span 4 fancybox fancybox.iframe" title="ACC.Dantesoftware.com">
-				    					<div class="profile-icon">&#216;</div>
-				    					<img src="img/parallax/bg2.jpg" alt="Sign in with an initial password. Zoom in to action areas, or feel free to change the time.">
-			    						
-				    			</a>
-							</div>
-				</div>
-				</div>
-			</div>
-			
-		</section>	
-			
-
-<!--End Demo Page -->
-	
-<!--Start Demo Page Toggle 
-
-			<section id="demo" class="page-gray">
-			<div class="container">
-				<div class="row">
-					<div class="span12">
-						<div class="title">Demo</div>
-					</div>
-				</div>
-				
-				<div class="row">
-					<hr class="span12">
-				</div>
-		
-				<div class="row">
-					<div class="span12">
-						
-						
-						<div class="toggle">
-							<div class="toggle-wrp">
-								<h6>ACC</h6>
-								<div class="container">
-						<iframe class="container" src="http://acc.dantesoftware.com"  frameborder="0" noresize="noresize" data-view="fullScreenPreview" style="height: 500px">
-						</iframe>
-					</div>
-							</div>
-				
-						
-						<hr class="visible-phone">
-					</div>
-				</div>
-					
-			</div>
-		</section>
-
-	End Demo Page with Toggle -->
-
-	<!-- Start NEWS Page -->
-
-		<section id="news" class="page">
-			<div class="container">
-				<div class="row">
-					<div class="span12">
-						<div class="title">News</div>
-					</div>
-				</div>
-				
-				<div class="row">
-					<hr class="span12">
-				</div>
-						<!-- Start Accordion -->
-				<div class="row">
-					<div class="span12">
-						
-						
-						<div class="accordion">
-							<div class="accordion-wrp">
-								<h6>Unc Inc to make the Fileradar App</h6>
-								<div class="accordion-content">
-									<a>February 21, 2016</a>
-									<p>Today we can announce that we have selected Unc Inc to build the Fileradar App, the consumer app that will first launch in The Netherlands and that will revolutionize the way car travellers make decisions. We are working very hard to get our traffic predictions to the highest possible quality, and to finish the API that will feed the apps.</p>
-								</div>
-							</div>
-							<div class="accordion-wrp">
-								<h6>Setting up the Rotterdam trial has commenced</h6>
-								<div class="accordion-content">
-									<a>February 21, 2016</a>
-									<p>Today we started with setting up the field trial in Rotterdam in which we will compare three different detectors to estimate urban queues in real-time. The video camera is working now – next is the SmartMicro radar detector!</p>
-								</div>
-							</div>
-							<div class="accordion-wrp">
-								<h6>Fileradar tests SmartMicro radar</h6>
-								<div class="accordion-content">
-									<a>January 26, 2015</a>
-									<p>Vandaag is bekend geworden dat we de kans krijgen om in Rotterdam een SmartMicro radardetector te gaan testen. Daarnaast zullen we ook een videocamera ophangen om de data uit de radardetector en uit de detectielussen te kunnen valideren. De proef zal 6 weken duren en zal in het voorjaar van 2015 plaatsvinden.</p>
-								</div>
-							</div>
-							<div class="accordion-wrp">
-								<h6>Testing a SmartMicro radar detector</h6>
-								<div class="accordion-content">
-									<a>January 21, 2015</a>
-									<p>Today we can announce that we will be able to test a SmartMicro radar detector in Rotterdam. Along with the radar detector data, we will collect loop detector data and video images, so that we can compare 3 different methods of estimating queues. The trial will take about 6 weeks and will commence in the Spring of 2015.</p>
-								</div>
-							</div>
-							<div class="accordion-wrp">
-								<h6>PPA evaluated</h6>
-								<div class="accordion-content">
-									<a>November 7, 2015</a>
-									<p>Now that the ‘PPA‘ field trial has finished, we have extensively evaluated the results in cooperation with Arane. Based on the data, it can be concluded that the system in its current setup didn’t achieve positive results yet. However, we have identified several optimisations that can lead to significant improvement of the system. We have computed that a total of 150 vehicle hours of delay may be saved by the system for 1 single bottleneck. Hopefully we can verify these predictions in 2015, in the followup ‘PPA2′!</p>
-								</div>
-							</div>
-						</div>
-						
-						<hr class="visible-phone">
-					</div>
-				</div>
-						<!-- End Accordion -->
-			</div>
-		</section>
-		
-	<!-- End NEWS Page -->
-
-
-		<!-- Start Parallax -->
-		<section id="parallax1">
-			<div class="bg1"></div>
-			<div class="pattern"></div>
-			<div class="container">
-				<div class="row">
-					<div class="span12">
-						<div class="vertical-text">
-							<div class="parallax-title">Beside the regular static representation of spatial data, Dante includes by default the <a class="scroll-link" href="#partners"> time dimension </a>and presents <a class="scroll-link" href="#partners"> dynamically </a> periodic changes, without hindering the rendering process and the user experience.</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End Parallax -->
-		
-		<!-- Start Modules Page -->
-		<section id="module" class="page">
-			<div class="container">
-				<div class="row">
-					<div class="span12">
-						<div class="title">Modules</div>
-						<hr>
-							<div class="lead-small">Dante is a modular server platform from the ground up written in Java using the OSGI standard. Currently there are well over a hundred modules that can be combined in different ways to achieve a broad range of functionality. Below we list some of the frequent combinations.
-							</div>
-							<p></p>
-
-						<div class="row">
-
-							<!-- Start Profile -->
-							<div class="span3 profile">
+							</li>
+							<li class="mega-menu"><a href="portfolio.html"><div>Portfolio</div></a>
 								
-								<div class="profile-name">Assimilate any data source</div>
+							</li>
+							<li class="mega-menu"><a href="http://utrecht.dantesoftware.com" target="_blank""><div>Demo</div></a>
 								
-								<div class="profile-desc">
-									<p>Any type of data source can be assimilated in Dante. So far the following sources have been made accessible: open streetmap, openLR, loop detectors, bluetooth, floating car data, radar detector, video, weather imagery, structured feeds e.g. RSS, Datex2, unstructured data from twitter or websites. In general connecting to an API, accessing a known database or assimilating data directly from a collection of sensors is trivial.</p>
-								</div>
-								
-							</div>
-							<!-- End Profile -->
+							</li>
 							
-							<!-- Start Profile -->
-							<div class="span3 profile">
-								
-								<div class="profile-name">Standardization of data: become source agnostic</div>
-								<div class="profile-desc">
-									<p>All traffic observations and meta data are standardised in the so called D-State where D Stands for discretisation. The DState has a short term buffer of a few minutes where all data from all connected asynchronous sources can be placed correctly. At any point in time the DState tells us what the state currently is and recently was. The DSTate keeps track of the original data but also aggregates these into usable components such as: speed, travel time, density, flow, occupancy, blockage.</p>
-								</div>
-								
-							</div>
-							<!-- End Profile -->
+							<li class="mega-menu"><a href="team.html"><div>Team</div></a>
+							</li>
+							<li class="mega-menu"><a href="contact.html"><div>Contact</div></a>
+							</li>
 							
-							<!-- Start Profile -->
-							<div class="span6 profile">
-								
-								<div class="profile-name">Tracking congestion phenomena</div>
-								<div class="profile-desc" >
-									<p>On top of DState we build ‘Trackers’. Trackers are advanced algorithms that track a specific traffic phenomenon. They are not data source dependant anymore but operate on the DState. </p>
-										
-									<li>Shockwaves: detection and ultra short term prediction. Shockwaves are stop-and-go traffic jams that move upstream through the traffic network. Shockwaves are sometimes known to induce congestion where traffic is at a critical stage.</li>
-									<li>Motorway congestion: ‘regular’ congestion associated with a temporal/spatial capacity problem. During the peak hours at a certain (well known) bottleneck congestion starts. Vehicles start queuing until the peak demand falls below a certain threshold and the queue starts to dissolve.</li>
-									<li>Urban queue: The queue of waiting vehicles before a traffic light or urban intersection which have to wait one or more cycles before they can pass the traffic light..</li>
-									<li>Gridlock: The congestive condition when an urban network as a whole becomes congested..</li>
-									<li>Accidents: A special case of congestion is related to accidents. On average about 25% of traffic can be associated with accidents.</li>
-									<li>All trackers come with two qualities. Phenomena can be tracked at the link level or at the lane level. The difference is the lateral detail which is higher when tracked specifically per lane.</li>
-								</div>
-								
-							</div>
-							<!-- End Profile -->	
+							
+						</ul>
 
-							<!-- Start Profile -->
-							<div class="span3 profile">
-								
-								<div class="profile-name">Congestion analytics</div>
-								<div class="profile-desc">
-									<p>Given the tracked phenomena over a longer range of time, we apply various algorithms to the data in order to gain more insight. We define ‘seed regions’ in the network where at a certain time and place the probability of regular congestion onset becomes significant. Similarly we can define the shock wave frequency at certain links in the network.</p>
-								</div>
-								
-							</div>
-							<!-- End Profile -->
+						<!-- Top Cart
+						============================================= -->
+						<div id="top-cart">
+							<a href="http://www.twitter.com/fileradarNL" class="icon-twitter">
 							
-							<!-- Start Profile -->
-							<div class="span3 profile">
-								
-								<div class="profile-name">Metadata Enrichment</div>
-								<div class="profile-desc">
-									<p>Given the tracked phenomenon, we enrich these by adding as much meta data as we can. The meta data considered may be some statistical properties, properties from structured sources like traffic operators or meta data automatically derived from unstructured data sources via twitter, or internet. The metadata itself is in turn used for different cases. It is widely regarded as very useful by traffic operators. And in our prediction engine it is used as a way to pre classify certain types of congestion before we start to predict them.</p>
-								</div>
-								
-							</div>
-							<!-- End Profile -->
-							
-							<!-- Start Profile -->
-							<div class="span3 profile">
-								
-								<div class="profile-name">Congestion Prediction</div>
-								<div class="profile-desc">
-									<p>Based on the combination of tracked traffic phenomenon, the short time knowledge of the recent past in DState and the enriched meta data we employ various algorithms to make a prediction. They are based on statistics, traffic flow theory, exact/discrete analytics, Bayesian data assimilation and sometimes black box models.</p>
-								</div>
-								
-							</div>
-							<!-- End Profile -->
-							
-							<!-- Start Profile -->
-							<div class="span3 profile">
-								
-								<div class="profile-name">TrafficBrowser360 (HTML5)</div>
-								<div class="profile-desc">
-									<p>Finally all information is made accessible via internet on our traffic browser. The traffic browser is accessible on all html5 capable devices and is build on standards such as leaflet, meteor and  nodeJS. The traffic browser is simply put: a dynamic mapping application, just like Google maps but with dynamic data. The traffic browser offers highly 2way interactive user specific sessions where users can view the traffic state at any historic, recent or future time at any place. In the past 7 years we have learned how to visualize data in such a way it is kept understandable.</p>
-								</div>
-								
-							</div>
-							<!-- End Profile -->
-							
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End modules Page -->
-	
-		<!-- Start Parallax -->
-		<section id="parallax2">
-			<div class="bg2"></div>
-			<div class="pattern"></div>
-			<div class="container">
-				<div class="row">
-					<div class="span4 right-pull">
-						<div id="twitter-parallax" class="vertical-text">
-							<a class="twitter-timeline" data-height="300" data-theme="light" data-link-color="#fac828" href="https://twitter.com/dantesoftware"></a>
-							
-
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End Parallax -->
-	
-	
-
-		<!-- Start Cases Page -->
-		<section id="portfolio" class="page page-gray">
-			<div class="container">
-				<div class="row">
-					<div class="span12">
-						<div class="title">Cases</div>
-						<hr>
-						
-						
-
-						<!-- Start Filters -->
-		                <ul class="option-set" data-option-key="filter">
-					    	<li><a class="selected" href="#filter" data-option-value="*"><span></span>All projects</a></li>
-							<li><a href="#filter" data-option-value=".traffic"><span></span>Traffic management</a></li>
-							<li><a href="#filter" data-option-value=".sustain"><span></span>Sustainable Transport</a></li>
-							<li><a href="#filter" data-option-value=".spatial"><span></span>Spatial Assessment</a></li>
-				    	</ul>
-				    	<!-- End Filters -->
-				    	
-						<div id="posts" class="row isotope">
-						
-							<!-- Start Project -->
-							<div class="post item span4 isotope-item traffic">
-				    			<a href="https://youtu.be/uSPXhmm0DEY" rel="group1" class="project-wrp fancybox-media" title="FileRadar">
-								<div class="profile-icon">&#0098;</div>
-								<div class="profile-name">Fileradar App</div>
-								<div class="profile-desc">
-									<p>The Fileradar app employs the expertise of Dantesoftware, providing routeplanning on the go. Thanks to our prediction engine, the app will consider the fastest route for the given time of day, weather conditions, latest news, etc and weighs each information appropriately.</p>
-								</div>	
-								<hr class="mini">
-								<div class="project-date">www.FileRadar.nl</div>
-								
-
 								</a>
-							</div>
-							<!--	End Project -->
+						</div><!-- #top-cart end -->
 
 
-								<!-- Start Project -->
-							<div class="post item span4 isotope-item traffic">
-				    			<a href="http://ppa.dantesoftware.com" rel="group1" class="project-wrp fancybox fancybox.iframe" title="PPA-West">
-			    						<div class="profile-icon">&#0047;</div>
-			    						<div class="profile-name">PPA-West</div>
-										<div class="profile-desc">
-					    				
-										<p>Dante is fed with TomTom data, video data and data from 5 radar detectors. In Dante all data is made accessible, and visible. The data is used to estimate motorway queues and urban queues.</p>
-										</div>
-										<div class="project-client">Amsterdam</div>
-										
-										<hr class="mini">
-										<div class="project-date">ppa.dantesoftware.com</div>
-				    			</a>
-							</div>
-								<!-- End Project -->
-								
-								<!-- Start Project -->
-							<div class="post item span4 isotope-item traffic">
-				    			<a href="http://poc.dantesoftware.com" rel="group2" class="project-wrp fancybox fancybox.iframe" title="Proof-Of-Concept / GoyLaan">
-				    					<div class="profile-icon">&#0047;</div>
-			    						<div class="profile-name">GoyLaan</div>
-				    					<div class="profile-desc">
-					    					
-										<p>For the city of Utrecht a Dante setup is made using video, loop, 24 radar detectors, bluetooth, manual counts, and public transport data. For the first use case, the data is analyzed to estimate the effect on traffic flow in a before and after study.</p>
-										</div>
-										<div class="project-client">Utrecht</div>
-										
-										<hr class="mini">
-										<div class="project-date">poc.dantesoftware.com</div>
-				    			</a>
-							</div>
-								<!-- End Project -->
-								
-								<!-- Start Project -->
-								<div class="post item span6 isotope-item traffic">
-					    			<a href="https://youtu.be/edqzF_LCkGI" rel="group2" class="project-wrp fancybox-media" title="AFM">
-					    				<div class="profile-icon">&#0098;</div>
-										<div class="profile-name">AFM</div>
-				    					<div class="profile-desc">
-					    					
-										<p>The Adaptive Queue Management system, or AFM-system, is a system that is being built for the Maastunnel, one of the most important links between the northern and southern parts of Rotterdam, the Netherlands. The goal of AFM is to ensure a safe usage of the Maastunnel as long as possible, while maintaining the level of service of the traffic network around the tunnel. To realise that goal, it is necessary to measure the real-time traffic situation on a large number of locations in Rotterdam.</p>
-										<p>Fileradar is responsible for the monitoring of queues at over 40 intersections in Rotterdam using streaming radar data. The system will be realised and thoroughly tested between 2016-2018 and will have to meet the highest reliability standards, as the AFM system is primarily a safety system.</p>
-										</div>
-										<div class="project-client">Rotterdam</div>
-										
-										<hr class="mini">
-										<div class="project-date"></div>
-					    			</a>
+
+
+						<!-- Top Search
+						============================================= -->
+						<div id="top-search">
+							<a href="mailto:info@fileradar.nl" class="icon-email2">
+							</a>
+						</div>
+					</nav><!-- #primary-menu end -->
+
+				</div>
+
+			</div>
+
+		</header><!-- #header end -->
+
+		<section id="slider" class="slider-parallax swiper_wrapper full-screen clearfix" data-autoplay="45000" data-loop="true">
+			<div class="slider-parallax-inner">
+
+				<div class="swiper-container swiper-parent">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide dark">
+							<div class="container clearfix">
+								<div class="slider-caption slider-caption-center">
+									<h2 data-caption-animate="fadeInUp">Fileradar</h2>
+									<p data-caption-animate="fadeInUp" data-caption-delay="200">Past, Present &amp; Future Road Traffic Analytics.</p>
 								</div>
-								<!-- End Project -->
-								
-								<!-- Start Project -->
-								<div class="post item span4 isotope-item traffic">
-					    			<a rel="group2" class="project-wrp" title="Rhoon Traffic Management Centre">
-				    					<div class="profile-name">Rhoon Traffic Management Centre</div>
-				    					<div class="profile-desc">
-					    					
-										<p>For the Rhoon Traffic Management Centre we provide traffic flow predictions.</p>
-										</div>
-										<div class="project-client">Rhoon</div>
-										
-										<hr class="mini">
-										<div class="project-date"></div>
-					    			</a>
 							</div>
-								<!-- End Project -->
-								
-								<!-- Start Project -->
-							<div class="post item span4 isotope-item traffic">
-				    			<a href="http://adapt.dantesoftware.com" rel="group1" class="project-wrp fancybox fancybox.iframe" title="ADAPT">
-				    					<div class="profile-icon">&#0047;</div>
-			    						<div class="profile-name">ADAPT</div>
-				    					<div class="profile-desc">
-					    					
-										<p>In a combined project with Highways England And Rijkswaterstaat we developed a series of modules called ADAPT. In ADAPT we run a regular prediction engine but also continuously  listen to unstructured data from twitter and internet and incorporate an event feed from Bemobile.</p>
-										</div>
-										<div class="project-client">Highways England</div>
-										
-										<hr class="mini">
-										<div class="project-date">adapt.dantesoftware.com"</div>
-				    			</a>
+							<div class="video-wrap">
+								<video id="slide-video" poster="images/videos/explore.jpg" preload="auto" loop autoplay muted>
+									<source src='images/videos/utrecht.m4v' type='video/m4v' />
+									<source src='images/videos/utrecht.mp4' type='video/mp4' />
+								</video>
+								<div class="video-overlay" style="background-color: rgba(0,0,0,0.55);"></div>
 							</div>
-								<!-- End Project -->
-								
-							<!-- Start Project -->
-							<div class="post item span4 isotope-item sustain">
-				    			<a href="https://youtu.be/CxanE_W46ts?t=66" rel="group3" class="project-wrp fancybox-media" title="FIT#">
-				    					<div class="profile-icon">&#0098;</div>
-				    					<div class="profile-name">FIT#</div>
-				    					<div class="profile-desc">	
-										<p>From Images to Numbers (FIT#) project comprises the application of the open source <span>SegNet</span> convulational neural network tool. FIT# applies the analytical tool to quantify road use from deployed and existing CCTV cameras. Instead of relying on manual road user counts, the software package empowers city stakeholders to gain an objective, numerified analysis of road users - accounting for all modes of transport.</p>
-										</div>
-										<div class="project-client"></div>
-										<hr class="mini">
-										<div class="project-date"></div>
-				    			</a>
-							</div>
-								<!-- End Project -->
-								<!-- Start Project -->
-							<div class="post item span4 isotope-item sustain">
-				    			<a href="http://www.bicyclize.com" target="_blank" rel="group3" class="project-wrp fancybox fancybox.iframe" title="Bicyclize">
-				    					<div class="profile-icon">&#0047;</div>
-			    						<div class="profile-name">Bicyclize</div>
-				    					<div class="profile-desc">
-					    					
-										<p>The Bicyclize project merges the findings of FIT# and presents cycling and pedestrian traffic flow in the TrafficBrowser360. Bicyclize provides insights for city planners and stakeholders to make better decisions on insfrastructure appraisal.</p>
-										</div>
-										<div class="project-client"></div>
-										
-										<hr class="mini">
-										<div class="project-date">bicyclize.com</div>
-				    			</a>
-							</div>
-								<!-- End Project -->
-
-								
-								<!-- Start Project -->
-							<div class="post item span4 isotope-item spatial">
-				    			<a href="img/mortgagesLondon.gif" rel="group4" class="project-wrp fancybox" title="Dante Housing" alt="Changes in mortgage pricing in Greater London">
-				    					<div class="profile-icon">&#0100;</div>
-				    					<div class="profile-name">Dante Housing</div>
-				    					<div class="profile-desc">
-					    					
-										<p>We took non-transport data to prove how easy to visualise the housing market in Greater London and predict future changes in housing prices.</p>
-										</div>
-										<div class="project-client"></div>
-										
-										<hr class="mini">
-										<div class="project-date"></div>
-				    			</a>
-							</div>
-								<!-- End Project -->
-								
-								<!-- Start Project -->
-							<div class="post item span4 isotope-item site spatial">
-				    			<a rel="group4" class="project-wrp" title="Dante Construct">
-				    					<div class="profile-name">Dante Construct</div>
-				    					<div class="profile-desc">
-					    					
-										<p>Development visualisation, safety assessment, project delivery estimation</p>
-										</div>
-										<div class="project-client"></div>
-										
-										<hr class="mini">
-										<div class="project-date"></div>
-				    			</a>
-							</div>
-								<!-- End Project -->
-							
 						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End Portfolio Page -->		
-		
-		<!-- Start partners Page -->
-		<section id="partners" class="page">
-			<div class="container">
-				<div class="row">
-					<div class="span12">
-					<div class="title">Partners</div>
-					<hr>
+						<div class="swiper-slide dark">
+							<div class="container clearfix">
+								<div class="slider-caption slider-caption-center">
+									<h2 data-caption-animate="fadeInUp">Traffic Prediction</h2>
+									<p data-caption-animate="fadeInUp" data-caption-delay="200">Big Data &amp; Floating Car Data based predictions</p>
+								</div>
+							</div>
+							<div class="video-wrap">
+								<video id="slide-video" poster="images/videos/explore.jpg" preload="auto" loop autoplay muted>
+									<source src='images/videos/rhoon.m4v' type='video/m4v' />
+									<source src='images/videos/rhoon.mp4' type='video/mp4' />
+								</video>
+								<div class="video-overlay" style="background-color: rgba(0,0,0,0.55);"></div>
+							</div>
+						</div>
+						<!-- slide pictures 
+						<div class="swiper-slide dark" style="background-image: url('images/slider/swiper/1.jpg');">
+							<div class="container clearfix">
+								<div class="slider-caption slider-caption-center">
+									<h2 data-caption-animate="fadeInUp">Fileradar</h2>
+									<p data-caption-animate="fadeInUp" data-caption-delay="200">Past, Present &amp; Future Traffic Analysis.</p>
+								</div>
+							</div>
+						</div>
 						
+						<div class="swiper-slide" style="background-image: url('images/slider/swiper/3.jpg'); background-position: center top;">
+							<div class="container clearfix">
+								<div class="slider-caption">
+									<h2 data-caption-animate="fadeInUp">Great Performance</h2>
+									<p data-caption-animate="fadeInUp" data-caption-delay="200">You'll be surprised to see the Final Results of your Creation &amp; would crave for more.</p>
+								</div>
+							</div>
+						</div>
+						-->
 					</div>
+					<div id="slider-arrow-left"><i class="icon-angle-left"></i></div>
+					<div id="slider-arrow-right"><i class="icon-angle-right"></i></div>
 				</div>
-			</div>
-			<div class="page">
-				<div class="container">
-					<div class="row ">
-						<div class="span4">
-							<div class="row">
-								
-								<a class="external" href="http://www.tomtom.com"><img src="img/partners/tomtom.png" width="150"  style="margin:10px 20px 0px 80px"></a>
-								
-								<a class="external" href="http://www.be-mobile-international.com"><img src="img/partners/be-mobile.png" width="150" style="margin: 60px 20px 20px 80px"></a>
-								<a class="external" href="http://www.mottmac.com/"><img src="img/partners/mottmac.png" width="150" style="margin: 20px 20px 20px 80px"></a>
 
-							</div>
-						</div>
-						<div class="span4">
-							<div class="row">
-								<a class="external" href="http://www.smartmicro.de/"><img src="img/partners/smartmicro.png" width="150" style="margin: 0px 20px 20px 80px"></a>
-								
-								<a class="external" href="http://arane.nl/"><img src="img/partners/Arane.png" width="150" style="margin: 0px 20px 20px 80px"></a>
-								
-								<a class="external" href="http://www.kapsch.net/"><img src="img/partners/Kapsch.png" width="150" style="margin: 0px 20px 20px 80px"></a>
+				<a href="#" data-scrollto="#content" data-offset="100" class="dark one-page-arrow"><i class="icon-angle-down infinite animated fadeInDown"></i></a>
 
-							</div>
-						</div>
-						<div class="span4">
-							<div class="row">
-								<a class="external" href="http://www.RijkswaterStaat.nl/"><img src="img/partners/RijkswaterStaat.jpg" width="150" style="margin: 0px 20px 20px 80px"></a>
-								
-								<a class="external" href="http://www.gov.uk/government/organisations/highways-england/"><img src="img/partners/HEngland.jpg" width="150" style="margin: 20px 20px 20px 70px"></a>
-								<a class="external" href="http://ej-technologies.com/"><img src="img/partners/ej-technologies.png" width="150" style="margin: 20px 20px 20px 80px"></a>
-								<a class="external" href="http://www.tudelft.nl/en/"><img src="img/partners/tudelft.png" width="150" style="margin: 20px 20px 20px 80px"></a>
-
-								
-							</div>
-						</div>
-					</div>
-				</div>
 			</div>
 		</section>
-		<!-- End partners Page -->
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+
+			<div class="content-wrap">
+
+				<div class="container clearfix">
+					<div class="row clearfix">
+
+						<div class="col-lg-5">
+							<div class="heading-block topmargin">
+								<h1>Past Present & Future Road Traffic Analytics</h1>
+							</div>
+							<p class="lead">Using our dynamic mapping backend we can assimilate any type of data and provide powerful and indepth road traffic analytics for past, present and future conditions.
+							</p>
+
+						</div>
+
+						<div class="col-lg-7">
+							<div style="position: relative; margin-bottom: -60px;" class="ohidden" data-height-lg="426" data-height-md="567" data-height-sm="470" data-height-xs="287" data-height-xxs="183">
+								<img src="images/services/Radar.png" style="position: absolute; top: 0; left: 0;" data-animate="fadeInUp" data-delay="100" alt="Chrome">
+								<img src="images/services/app3.png" style="position: absolute; top: 0; left: 0;" data-animate="fadeInUp" data-delay="400" alt="iPad">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="section nobottommargin">
+					<div class="container clear-bottommargin clearfix">
+						<div class="heading-block topmargin">
+							<H1>Just three steps: Data, Analytics and Disseminate</H1>
+						</div>
+						<div class="row topmargin-sm clearfix">
+							<div class="col-md-4 bottommargin">
+								<i class="i-plain color i-large icon-data inline-block" style="margin-bottom: 15px;"></i>
+								<div class="heading-block nobottomborder" style="margin-bottom: 15px;">
+									<span class="before-heading">Flexible &amp; Customizable data input.</span>
+									<h4>Any kind of data source</h4>
+								</div>
+								<p>Any type of data source can be assimilated. So far the following sources have been made accessible: open streetmap, openLR, loop detectors, bluetooth, floating car data, radar detector, video, weather imagery, structured feeds e.g. RSS, Datex2, unstructured data from twitter or websites. In general connecting to an API, accessing a known database or assimilating data directly from a collection of sensors is a routine task. And more is on the way.</p>
+							</div>
+
+							<div class="col-md-4 bottommargin">
+								<i class="i-plain color i-large icon-cogs inline-block" style="margin-bottom: 15px;"></i>
+								<div class="heading-block nobottomborder" style="margin-bottom: 15px;">
+									<span class="before-heading">Past Present &amp; Future Analytics</span>
+									<h4>Trackers &amp; Algorithms</h4>
+								</div>
+								<p>A tracker is our construct to record any type of geo/spatial phenomena and we have applied it to congestion. We use trackers for regular (bottleneck) congestion, urban queues, shockwaves and incidents. We use databases of traces for our past analytics or as input to our prediction engine and always have trackers follow the current state of traffic on our networks.</p>
+							</div>
+							<div class="col-md-4 bottommargin">
+								<i class="i-plain color i-large icon-line2-screen-desktop inline-block" style="margin-bottom: 15px;"></i>
+								<div class="heading-block nobottomborder" style="margin-bottom: 15px;">
+									<span class="before-heading">Disseminate via HTML5 or API</span>
+									<h4>Browser, API or mobile app</h4>
+								</div>
+								<p>All information is made accessible via internet on our traffic browser just like Google maps but with a dynamic map that changes when you change the time slider. It is accessible on all html5 capable device, secure, build on standards such as <a href="http://leafletjs.com/">leaflet</a>, <a href="http://meteor.com/">meteor</a> and <a href="http://nodejs.org/">node js</a>.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<!-- Content
+		============================================= -->
+		<section id="module">
+
+			<div class="module-wrap">
+
+				<div class="container clearfix">
+
+					<div class="row topmargin-lg bottommargin-sm">
+
+						<div class="heading-block topmargin">
+							<H1>Off-the-shelf modules</H1>
+							<span class="divcenter"></span>
+						</div>
+
+						<div class="col-md-4 col-sm-6 bottommargin">
+
+							<div class="feature-box fbox-right topmargin" data-animate="fadeIn">
+								<div class="fbox-icon">
+									<a href="network.html"><i class="icon-map"></i></a>
+								</div>
+								<h3>Network Analytics</h3>
+								<p>We provide network statistics and algorithms to determine congestion probabilities and identify areas for improvement and management.
+								</p>
+							</div>
+
+							<div class="feature-box fbox-right topmargin" data-animate="fadeIn">
+								<div class="fbox-icon">
+									<a href="gnv.html"><i class="icon-bars"></i></a>
+								</div>
+								<h3>Automated Network Balancing (GNV)</h3>
+								<p>We provide input for network balancing concepts that delay the onset of congestion and keep traffic flowing.</p>
+							</div>
+
+							<div class="feature-box fbox-right topmargin" data-animate="fadeIn" data-delay="400">
+								<div class="fbox-icon">
+									<a href="congestion.html"><i class="icon-map-marker2"></i></a>
+								</div>
+								<h3>Congestion Trackers</h3>
+								<p>For any network we have out of the box trackers to record all types of congestion and use it as input to other modules or API's.</p>
+							</div>
+
+							<div class="feature-box fbox-right topmargin" data-animate="fadeIn">
+								<div class="fbox-icon">
+									<a href="#"><i class="icon-video"></i></a>
+								</div>
+								<h3>Video Analytics</h3>
+								<p>We use Convolutional Neural Networks to tranform video feeds of traffic into usable anonmyous traffic statistics.</p>
+							</div>
+
+
+						</div>
+						<div class="col-md-4 col-sm-6 bottommargin">
+
+							<div class="feature-box fbox-right topmargin" data-animate="fadeIn" data-delay="200">
+								<div class="fbox-icon">
+									<a href="Real-Time.html"><i class="icon-megaphone"></i></a>
+								</div>
+								<h3>Smartmicro Radar</h3>
+								<p>A module to use these types of radars as input for urban congestion tracking.</p>
+							</div>
+
+							<div class="feature-box fbox-right topmargin" data-animate="fadeIn" data-delay="400">
+								<div class="fbox-icon">
+									<a href="#"><i class="icon-rocket"></i></a>
+								</div>
+								<h3>Quick Data setup</h3>
+								<p>Our quick data setup module allows us to quickly and scalably assimilate any type of datasource, index, store, monitor and retrieve it.</p>
+							</div>
+
+							<div class="feature-box fbox-right topmargin" data-animate="fadeIn">
+								<div class="fbox-icon">
+									<a href="adapt.html"><i class="icon-group"></i></a>
+								</div>
+								<h3>Adapt Traffic Operator Support</h3>
+								<p>Our suite of decision support tools to aid Traffic Operators in their complex task by effective tools and provision of a situtaional awarenss overview or in depth traffic 360.</p>
+							</div>
+
+							<div class="feature-box fbox-right topmargin" data-animate="fadeIn">
+								<div class="fbox-icon">
+									<a href=""><i class="icon-line2-support"></i></a>
+								</div>
+								<h3>In App support</h3>
+								<p>We use intercom.io as a module in our browser to allow one-on-one communication with our end users for optimal service and feedback.
+							</div>
+						</div>
+
+					
+						<div class="col-md-4 col-sm-6 bottommargin">
+
+
+							<div class="feature-box fbox-right topmargin" data-animate="fadeIn" data-delay="200">
+								<div class="fbox-icon">
+									<a href="360.html"><i class="icon-screen"></i></a>
+								</div>
+								<h3>Traffic 360</h3>
+								<p>Our module that provides a comprehensive 360 view of a tracked congestion instance for manual or automated use.</p>
+							</div>
+
+							<div class="feature-box fbox-right topmargin" data-animate="fadeIn" data-delay="200">
+								<div class="fbox-icon">
+									<a href="engine6.html"><i class="icon-data"></i></a>
+								</div>
+								<h3>Engine 6 Predictions</h3>
+								<p>The 6th generation of our hybrid prediction approach using decision trees and shockwave theory.</p>
+							</div>
+
+							<div class="feature-box fbox-right topmargin" data-animate="fadeIn" data-delay="400">
+								<div class="fbox-icon">
+									<a href="Traveltimes.html"><i class="icon-clock"></i></a>
+								</div>
+								<h3>Travel Times API</h3>
+								<p>An API for past, present or future travel times on AB routes or complex hypergraphs.</p>
+							</div>
+
+							<div class="feature-box fbox-right topmargin" data-animate="fadeIn" data-delay="400">
+								<div class="fbox-icon">
+									<a href="trafficbrowser.html"><i class="icon-screen"></i></a>
+								</div>
+								<h3>HTML5 Traffic Browser</h3>
+								<p>Our traffic browser is highly server side configurable and allows us to interact with our end users via any html5 enabled device</p>
+							</div>
+
+
+						</div>
+
+					</div>
+
+				</div>
+
+				
+
+				<div class="row clearfix bottommargin-lg common-height">
+
+					<div class="col-md-3 col-sm-6 dark center col-padding" style="background-color: #999999;">
+						<div>
+							<i class="i-plain i-xlarge divcenter icon-line2-directions"></i>
+							<div class="counter counter-lined"><span data-from="700" data-to="2130" data-refresh-interval="10" data-speed="5000"></span>kb/sec</div>
+							<h5>Raw data influx</h5>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-6 dark center col-padding" style="background-color: #e6b800;">
+						<div>
+							<i class="i-plain i-xlarge divcenter icon-line2-graph"></i>
+							<div class="counter counter-lined"><span data-from="1500" data-to="125300" data-refresh-interval="50" data-speed="2700"></span></div>
+							<h5>Active datasources</h5>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-6 dark center col-padding" style="background-color: #999999;">
+						<div>
+							<i class="i-plain i-xlarge divcenter icon-line2-layers"></i>
+							<div class="counter counter-lined"><span data-from="10" data-to="52" data-refresh-interval="5" data-speed="3500"></span></div>
+							<h5>No. of Data source types</h5>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-6 dark center col-padding" style="background-color: #e6b800;">
+						<div>
+							<i class="i-plain i-xlarge divcenter icon-map-marker2"></i>
+							<div class="counter counter-lined"><span data-from="60" data-to="1400" data-refresh-interval="30" data-speed="2700"></span></div>
+							<h5>Number of trackers</h5>
+						</div>
+					</div>
+
+				</div>
+
 	
 
 
-		<!-- Start Contact Page -->
-		<section id="contact" class="page">
-			<div class="container">
-				<div class="row">
-					<div class="span12">
-						<div class="title center-title">Contact us</div>
-						<hr>
-						<div class="lead"></div>
-						<div class="row">
-							<div class="span8">
-								<div id="mapblack" style="height: 400px"></div>
-							</div>
-							<div class="span4 address">
-								<div class="contact-name">Fileradar BV</div>
-											
-								<h5>Our location</h5>
-								<h5>A-Lab</h5>
-											<p>Overhoeksplein 2</p>
-											<p>1031 KS, Amsterdam</p>
-											
-								<hr class="gray">
-								<h5>E-mail</h5>
-								<p>info@dantesoftware.com</p>
-								<hr class="gray">
-								
-								<ul class="social-icons">
-									<li><a href="https://twitter.com/dantesoftware">&#229;</a></li>
-									<!--li><a href="#">ë</a></li> insta
-									<li><a href="#">ä</a></li> facebook
-									<li><a href="#">è</a></li  google-->
-								</ul>
+
+
+
+				<!--div class="section parallax dark nobottommargin" style="background-image: url('images/services/home-testi-bg.jpg'); padding: 100px 0;" data-stellar-background-ratio="0.4">
+
+					<div class="heading-block center">
+						<h3>In the news</h3>
+					</div>
+
+					<div class="fslider testimonial testimonial-full" data-animation="fade" data-arrows="false">
+						<div class="flexslider">
+							<div class="slider-wrap">
+								<div class="slide">
+									<div class="testi-image">
+										<a href="#"><img src="images/testimonials/3.jpg" alt="Customer Testimonails"></a>
+									</div>
+									<div class="testi-content">
+										<p>Similique fugit repellendus expedita excepturi iure perferendis provident quia eaque. Repellendus, vero numquam?</p>
+										<div class="testi-meta">
+											Steve Jobs
+											<span>Apple Inc.</span>
+										</div>
+									</div>
+								</div>
+								<div class="slide">
+									<div class="testi-image">
+										<a href="#"><img src="images/testimonials/2.jpg" alt="Customer Testimonails"></a>
+									</div>
+									<div class="testi-content">
+										<p>Natus voluptatum enim quod necessitatibus quis expedita harum provident eos obcaecati id culpa corporis molestias.</p>
+										<div class="testi-meta">
+											Collis Ta'eed
+											<span>Envato Inc.</span>
+										</div>
+									</div>
+								</div>
+								<div class="slide">
+									<div class="testi-image">
+										<a href="#"><img src="images/testimonials/1.jpg" alt="Customer Testimonails"></a>
+									</div>
+									<div class="testi-content">
+										<p>Incidunt deleniti blanditiis quas aperiam recusandae consequatur ullam quibusdam cum libero illo rerum!</p>
+										<div class="testi-meta">
+											John Doe
+											<span>XYZ Inc.</span>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="row">
-					<div class="span12">
-						<hr class="feedbackline">
-						<div class="result">
-						</div>
+
+				</div-->
+
+
+
+
+				<div class="container clearfix">
+
+					<div id="oc-clients" class="owl-carousel image-carousel carousel-widget" data-margin="60" data-loop="true" data-nav="false" data-autoplay="5000" data-pagi="false" data-items-xxs="2" data-items-xs="3" data-items-sm="4" data-items-md="5" data-items-lg="6" >
+
+						<div class="oc-item"><a href="http://www.be-mobile-international.com" target="_blank"><img src="images/partners/bemobile.png" width="150"  style="margin:70px 20px 0px 80px" alt="Clients"></a></div>
+						
+						<div class="oc-item"><a href="http://www.tomtom.com" target="_blank"><img src="images/partners/tomtom.png" width="150"  style="margin:60px 20px 0px 80px" alt="Clients"></a></div>
+
+						<div class="oc-item"><a href="http://www.smartmicro.de/" target="_blank"><img src="images/partners/smartmicro.png" width="150"  style="margin:50px 20px 0px 80px" alt="Clients"></a></div>
+
+						<div class="oc-item"><a href="http://www.arane.nl" target="_blank"><img src="images/partners/Arane.png" width="150"  style="margin:20px 20px 0px 80px" alt="Clients"></a></div>
+
+						<div class="oc-item"><a href="http://www.kapsch.net" target="_blank"><img src="images/partners/Kapsch.png" width="150"  style="margin:70px 20px 0px 80px" alt="Clients"></a></div>
+
+						<div class="oc-item"><a href="http://www.RijkswaterStaat.nl" target="_blank"><img src="images/partners/RijkswaterStaat.jpg" width="150"  style="margin:50px 20px 0px 80px" alt="Clients"></a></div>
+
+						<div class="oc-item"><a href="http://ej-technologies.com" target="_blank"><img src="images/partners/ej-technologies.png" width="150"  style="margin:60px 20px 0px 80px" alt="Clients"></a></div>
+
+						<div class="oc-item"><a href="http://www.gov.uk/government/organisations/highways-england/" target="_blank"><img src="images/partners/HEngland.jpg" width="150"  style="margin:60px 20px 0px 80px" alt="Clients"></a></div>
+
+						<div class="oc-item"><a href="http://www.tudelft.nl/en" target="_blank"><img src="images/partners/tudelft.png" width="150"  style="margin:40px 20px 0px 80px" alt="Clients"></a></div>
+
+						<div class="oc-item"><a href="http://www.technolution.nl" target="_blank"><img src="images/partners/technolution.png" width="150"  style="margin: 60px 0px 0px 80px" alt="Clients"></a></div>
+
+
+
+
+
+
+
+
+
+
 					</div>
+
+
 				</div>
 
-				<!-- Start Form 
-				<form class="well">
-					<div class="row">
-						<div class="span6 pull-left">
-							<label>Your name</label>
-							<input class="span6" type="text" name="name" placeholder="Your Name">
-						</div>
-						<div class="span6 pull-right">
-							<label>Your e-mail</label>
-							<input class="span6" type="text" name="email" placeholder="Your E-mail">
-						</div>
-					</div>
-					<div class="row">
-						<div class="span12 textarea-margin">
-							<label>Message</label>
-							<textarea class="span12" rows="8" name="message" placeholder="Message"></textarea>
-							<button type="submit" class="btn"><i class="web-icon">8</i>Send Message</button>
-						</div>
-					</div>
-				</form>
-				 End Form -->
 			</div>
-		</section>
-		<!-- End Contact Page -->		
-		
-		<section id="copyright">
-		<a>© 2016 Fileradar BV</a>
-		</section>
 
-	
-	</div>
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-	<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script> <!-- leaflet -->
-	<script src="js/jquery.easing.min.js"></script>	
-	<script src="js/jquery.sticky.js"></script><!-- Sticky Navigation -->
-	<script src="js/jquery.scrollTo.js"></script><!-- Smooth Scrolling -->
-	<script src="js/jquery.nav.js"></script><!-- One Page Navigation -->
-	<script src="js/selectnav.min.js"></script><!-- Mobile Navigation -->
-	<script src="js/jquery.flexslider.js"></script><!-- FlexSlider 2 -->
-	<script src="js/jquery.parallax-1.1.3.js"></script><!-- Parallax -->
-	<script src="js/jquery.isotope.min.js"></script><!-- Isotope cases -->
-	<script src="js/mql.js"></script><!-- Isotope Fix -->
-	<script src="js/shortcodes.js"></script> <!-- Shortcodes -->
-	<script src="js/jquery.fancybox.pack.js"></script><!-- Fancybox -->
-	<script src="js/jquery.fancybox-media.js"></script><!-- Fancybox Media Helper -->
-	<script src="js/jflickrfeed.js"></script><!-- Flickr Feed -->
-	<script src="js/settings.js"></script> <!-- JS Options -->
-	<script src="js/contact.js"></script> <!-- Feedback form -->
-	<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+		</section><!-- #content end -->
+
+		<!-- Footer
+		============================================= -->
+		<footer id="footer" class="dark">
+
+			
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights">
+
+				<div class="container clearfix">
+
+					<div class="col_half">
+						Copyrights &copy; 2017 All Rights Reserved by Fileradar BV.<br>
+						<div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
+					</div>
+
+					<div class="col_half col_last tright">
+						<div class="fright clearfix">
+							
+							<a href="http://www.twitter.com/fileradarNL" target="_blank" class="social-icon si-small si-borderless si-twitter">
+								<i class="icon-twitter"></i>
+								<i class="icon-twitter"></i>
+							</a>
+
+							<a href="http://www.github.com/fileradar" target="_blank" class="social-icon si-small si-borderless si-github">
+								<i class="icon-github"></i>
+								<i class="icon-github"></i>
+							</a>
+
+							<a href="http://www.linkedin.com/fileradar" target="_blank" class="social-icon si-small si-borderless si-linkedin">
+								<i class="icon-linkedin"></i>
+								<i class="icon-linkedin"></i>
+							</a>
+						</div>
+
+						<div class="clear"></div>
+
+						<i class="icon-envelope2"></i> info@fileradar.nl <span class="middot">&middot;</span> <i class="icon-headphones"></i> +31 614 60 75 48<span class="middot">&middot;</span> <i class="icon-skype2"></i> FileRadar
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= --> 
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- External JavaScripts
+	============================================= -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/plugins.js"></script>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script type="text/javascript" src="js/functions.js"></script>
 	<script>
-		var layer = L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png',{
-  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="https://cartodb.com/attributions">CartoDB</a>'
-});
+	$(function() {
+		$( "#side-navigation" ).tabs({ show: { effect: "fade", duration: 400 } });
+	});
+</script>
 
-		var map = L.map('mapblack', {
-		  scrollWheelZoom: false,
-		  center: [52.38472, 4.90368],
-		  zoom: 13
-		});
-		var dante = L.icon({
-    iconUrl: 'img/logo2.png',
-   	iconSize:     [25, 25], // size of the icon
-    //shadowSize:   [50, 64], // size of the shadow
-    //iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
-    //shadowAnchor: [4, 62],  // the same for the shadow
-    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
-});
-		L.marker([52.3841, 4.903], {icon: dante}).addTo(map)
-			.bindPopup("<b>Dantesoftware</b><br />A-Lab");
-		
-		map.addLayer(layer);
-	</script>
-	
 
-  
 </body>
-
 </html>
